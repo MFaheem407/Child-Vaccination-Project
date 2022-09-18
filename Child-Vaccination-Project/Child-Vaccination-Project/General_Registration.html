@@ -1,0 +1,1024 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US" data-lang="en-US" crm-lang="en-US" dir="ltr" crm-lcid="1033"
+	same-site-mode="None">
+<head>
+		
+		<meta charset="utf-8" /><meta name="viewport" content="width=device-width,&#32;initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script type="text/javascript" >
+				
+		</script>
+	<title>
+	
+		General Registration
+		&nbsp;· Vaccination registration and booking portal
+</title>
+		
+		<script src="/_resources/getresourcemanager?lang=en-US"></script>
+	
+	<script type="text/javascript">
+		// Refresh all powerBI Iframes on Login in one Iframe
+		window.addEventListener('message', function (event) {
+			if (event && event.data && event.data == 'refreshPowerBI') {
+				$("iframe.powerbi").each(function () {
+					this.src = this.src;
+				});
+			}
+		});
+
+		// Fix for incorrect viewport width setting in IE 10 on Windows Phone 8.
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+			document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		}
+	</script>
+		
+	
+		
+		<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/bootstrap3.min.css" rel="stylesheet" />
+
+		<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/glyphicons-font-awesome-migrate.min.css" rel="stylesheet"/>
+
+		<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/preform.bundle-44b958182c.css" rel="stylesheet" />
+
+
+		
+		<!--[if lt IE 9]>
+				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		
+		<!--[if lt IE 10]>
+				<script src="~/js/formdata.js"></script>
+			<![endif]-->
+		
+			
+		
+		<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/theme.css" rel="stylesheet" />
+<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/bootstrap-multiselect.min.css" rel="stylesheet" />
+<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/montcovmxstyles.css" rel="stylesheet" />
+
+		
+		
+		
+		
+	
+		<link href="/css/offlinenotification.css" rel="stylesheet" /></head>
+<body data-sitemap-state="/general-contact-registration/:/"
+	data-dateformat="M/d/yyyy"
+	data-timeformat="h:mm tt"
+	data-datetimeformat="M/d/yyyy h:mm tt"
+	data-app-path="/"
+	data-ckeditor-basepath="/js/BaseHtmlContentDesigner/Libs/msdyncrm_/libs/ckeditor/"
+	data-case-deflection-url="/_services/search/a1103dc5-a5fe-4d76-adc3-1c71c5661eb7">
+
+	<div id="offlineNotificationBar" style="display: none;">
+		<div id="web"></div>
+		<div id="message">You&#8217;re offline. This is a read only version of the page.</div>
+		<div id="close" onclick="this.parentElement.style.display='none';"></div>
+	</div>
+
+	
+	<script type="text/javascript">
+		window["Microsoft"] = window["Microsoft"] || {};
+		window["Microsoft"].Dynamic365 = {
+			Portal: {
+				
+				User: {
+					contactId: '',
+					userName: ''
+				},
+				
+				version: '9.4.8.62',
+				type: 'CDSStarterPortal',
+				id: '9116b10f-a322-4aea-ab31-6d8d6d4ecb36'
+			}
+		}
+	</script>
+
+	
+		
+
+
+
+<style>
+    .navbar-brand {
+        font-family: Segoe UI !important;
+        font-size: 28px !important;
+        line-height: 24px !important;
+        padding-top: 16px;
+        font-weight: 500 !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+</style>
+
+            <!--div class="visible-xs-block">
+              <div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English"><div class="xrm-attribute-value">
+
+
+    <a href="~/"><img src="/headerlogo.png" alt="Montgomery County PA" style="height:40px"><span style="position: relative; top: 2px; margin-left: 9px;">Montgomery County PA​</span></a>
+
+
+</div></div>
+            </div-->
+          
+
+
+
+<script type="text/javascript">
+    window.onload = function () {
+        if (window.navigator.appName == "Microsoft Internet Explorer" || window.navigator.userAgent.indexOf("Trident") > 0) {
+            var searchElement = document.getElementById("search");
+            if (searchElement != null) searchElement.setAttribute("href", "");
+        }
+    };
+    function setHeight() {
+        var windowHeight = window.innerHeight - 140;
+        var navbar = document.getElementById("navbar");
+        if (navbar) {
+            navbar.style.maxHeight = windowHeight + "px";
+        }
+    }
+    window.addEventListener('resize', function (event) {
+        setHeight();
+    });
+</script>
+
+	<!-- add anti-forgery token-->
+	<div id="antiforgerytoken" data-url="/_layout/tokenhtml"></div>
+	<script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/preform.bundle-2c5735c41a.js" type="text/javascript"></script>
+
+	
+	<script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/prop-types.js"></script><script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/fela.js"></script><script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/fela-dom.js"></script>
+	<script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/pcf.bundle-33229a14eb.js" type="text/javascript"></script>
+
+	<script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/fela.js"></script><script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/fluentui-react.js"></script>
+	
+	   <form method="post" action="/en-US/general-contact-registration/" onsubmit="javascript:return WebForm_OnSubmit();" id="liquid_form">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['liquid_form'];
+if (!theForm) {
+    theForm = document.liquid_form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZPy7_VKdJAdrmEXkUgkbJutWuQ40Z9UT_766Xsw0RAyjUVfEx8oEuR4DD49KZHjBdA2&amp;t=637814653746327080" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1M3cYtbOYgt6ipWQuRWw8F5y0OlRnb68OuCvLkuiKRPVO3IWDDC_5E_9ZaAJsF7WpzJQiQRLuDv11Y2kUfgWvf3OkPDeW6YZ1OAuCWvvAaCW51IEeq-6jyG2upStdfuDAw2&amp;t=14d69f50" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvurdN7hcDhLmWQi5YiE-wWYOk_kAMf07xGT41Mg4s2lTpb6Hi4aJHvfMExkcIWdc3Ksi9uWhjrfvX0rh_VTIPqx1xWqYS6XfNjmLEdr2R0BwFiiir8h6c6ea-UvfLK2CMDYHVs9uSP6Um1GGV4-FRiU1&amp;t=49337fe8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OMvOhsyWU_8sRQdThwNDeTZgjbOh3xtpzL9b_YXPNbLnzA3NntxDeK5tlBHPwzkA6H0L1ZY1lpR7CTMgxgDYQj3lCS34x6gCuA5YzISJZwNoy-V4KzPrnVLXi_rISqNvZM5A_NdNWS4pweWEYHYZy2M1&amp;t=49337fe8" type="text/javascript"></script>
+<script src="../../js/jquery.blockUI.js" type="text/javascript"></script>
+<script src="/xrm-adx/js/webform.js" type="text/javascript"></script>
+<script src="/xrm-adx/js/radcaptcha.js" type="text/javascript"></script>
+<script src="/xrm-adx/js/crmentityformview.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1128FCF4" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="6c9JLeLf1pKpevA88bdbcSRD8HyVkBLixKIiRigcI67W+cr6WksCwV3Mtrbz/0iaxvG6GSiqQNHzwefqR942GXVgiK3HEjsbi8ZVMKTtKiy0x/vfmY8KY8CAISJFSFZgO9burf7U9XuzIsWRJtLN8BAZpFADZmOHjFzei0LwB0/8r5I6ih7nhVuUUltqWETSs4+hj6qRHWuJsf16ikbE3x/WDR/JlWcgF7Dsr+/RTwtl/2lcgOWQzEdxpGggD3WXmKU3Yh0NRk3LoetBWr6c761reWlq6dQy2cOHSs7BprlZALZLWDT8xS8s8tcfhTy4HqF3eEXwErrZpAzrucuMCwdkDM0iUVmu3BTGIv1APw7/oyUq5CH3NtWRVAMNicYm5fEdNi2XgAQudeoZjbfDpDJWXDJHuFci2cQQQ3mp6/P6HYO31t8FU5t/R+vH7fsdk4bq9+8fB0Y9aGG7NuC+9YG1e94UXb5Z2APqOWR4jb47NdFbn0IusQ1fXvcskZR0ao4JQ4OFf2H83VCFgVHSmFA7Kk97jUlZ81Xq00hvbAS0Jd+R7E/hoK/IcNgcskW+srYXNzI5Gj0LgUPpg3Jvcj1MEWvwqbpdxpxljaDjvQ2acanaBF/22E1Z/6jcXekpHHhPjkjE5T6oJJfzDCsSG9Hs+xtaSjPqxMoj7ptGtt7XQeRgX0brBS1vs1eZz+42x+Yns9U7yxEMLoBlRCaNkW8sEHp7BdHBv4Vi3efcDhDmoQyQzbFtKZbnP37yBZAtuJ5OHU2+jWIovdHNJbhWiptNiQl4bACqyh33DrC5r+FziflvUaXLP3/fSYWqTPgUAp7dZqyVFyqfKTAZ2P1X+wcxVUoZ+awApStMm1tJWOPZD6HV78DP+VXPiRYZDAjxHMjbpTr7cMg+R1V7V7AUdrAuQnUgeHGcYExPD4nq4vl/kYafPAu5rDeMBhzSMogzNddhFi6E5BYsQZBeHqcTlO/4Qssin1Lynq+Pjg3dw4xFmJiIMSXGYROyv3N21ilLp+N7HFGrheT7iRvEowaGLsIaZumsIGr/zOSXE4mR7TK5pTD4kIGeDY9OAzoXvNDwHT4vomUOwe99szZXgmwHyfBQUG291OiUDkH9PpOIIHEehDEGkFmOrawtbyxLHvkvsi4TVVHE1wGgwIWjt7v5fTlszsYX9/sZcAVz4AotM04TnZw0HftgGT+UOmuOuvnIyGHAGgRRfmpvVTlcTuvyMbWAkT/CcZm697paYq4DnfWxnZ+4SXHjWmJAfSDbW8Bq7s4GD/FrxM8aEVb7SkkJEO4U1prl9YY5BTO2sKBNznYcvwOVnfuzFcSGL3i+F4HC" />
+</div>
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentContainer$ctl01', 'liquid_form', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+	<script type="text/javascript" >
+		function entityFormClientValidate() {
+			// Custom client side validation. Method is called by the submit button's onclick event.
+			// Must return true or false. Returning false will prevent the form from submitting.
+			return true;
+		}			
+	</script>
+
+
+
+
+<style>
+    body > .alert {
+        display: none;
+    }
+</style>
+<div id="vaccination-registration-form" class="container">
+    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 banner">
+            <h1><div class="xrm-editable-html&#32;xrm-attribute"><div class="xrm-attribute-value">General Registration</div></div></h1>
+        </div>
+    </div>
+</div>
+    
+        <div id="WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2">
+	<span><script type="text/javascript">
+
+
+
+(function(webapi, $){
+ function safeAjax(ajaxOptions) {
+  var deferredAjax = $.Deferred();
+ 
+  shell.getTokenDeferred().done(function (token) {
+   // add headers for AJAX
+   if (!ajaxOptions.headers) {
+    $.extend(ajaxOptions, {
+     headers: {
+      "__RequestVerificationToken": token
+     }
+    }); 
+   } else {
+    ajaxOptions.headers["__RequestVerificationToken"] = token;
+   }
+   $.ajax(ajaxOptions)
+    .done(function(data, textStatus, jqXHR) {
+     validateLoginSession(data, textStatus, jqXHR, deferredAjax.resolve);
+    }).fail(deferredAjax.reject); //AJAX
+  }).fail(function () {
+   deferredAjax.rejectWith(this, arguments); // on token failure pass the token AJAX and args
+  });
+ 
+  return deferredAjax.promise(); 
+ }
+ webapi.safeAjax = safeAjax;
+})(window.webapi = window.webapi || {}, jQuery)
+
+
+function dec2hex(dec)
+{
+ return dec.toString(16).padStart(2, "0");
+}
+
+function generateId(len)
+{
+ var arr = new Uint8Array((len || 40) / 2);
+ window.crypto.getRandomValues(arr);
+ return Array.from(arr, dec2hex).join('');
+}
+
+function setCookie(name, value, hours)
+{
+ var expires = "";
+ if (hours)
+ {
+  var date = new Date();
+  date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+  expires = "; expires=" + date.toUTCString();
+ }
+ document.cookie = name + "=" + (value || "") + expires + "; path=/;secure";
+}
+
+
+function expireCookie(name)
+{
+document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+function getCookie(name)
+{
+ var nameEQ = name + "=";
+ var ca = document.cookie.split(';');
+ for (var i = 0; i < ca.length; i++)
+ {
+  var c = ca[i];
+  while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+  if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+ }
+ return null;
+}
+
+const contactErrSnippets = {
+    Err01: `<div class="alert alert-block alert-danger" role="alert">
+    <p class="text-danger">
+        <span class="fa fa-exclamation-triangle" aria-hidden="true"></span>
+        There was an error encountered 
+    </p>
+</div>`,
+    Err02: `<div class="alert alert-block alert-danger" role="alert">
+    <p class="text-danger">
+        <span class="fa fa-exclamation-triangle" aria-hidden="true"></span>
+        Please provide more information such as middle name as there is already records matching your information or check your email for previous registration details.
+    </p>
+</div>`,
+    Err03: `<div class="alert alert-block alert-danger" role="alert">
+    <p class="text-danger">
+        <span class="fa fa-exclamation-triangle" aria-hidden="true"></span>We are unable to register you for a Covid-19 first or second dose vaccination because you may have already registered for a different vaccination.  Please contact customer service at 610-278-5117 to schedule a Covid-19 vaccination appointment. Because you may have already registered with us for a different vaccination, you may receive an email regarding your other vaccination appointment.<br>        
+    </p>
+</div>
+`,
+}
+
+function LoadPrettyError() {
+    var pluginError = $('body .alert');
+
+    if (pluginError.length > 0) {
+        if ($(pluginError).html().contains('ContactDupeERR01')) {
+            $("[data-name='tab_PersonalInformation']").prepend(contactErrSnippets.Err01);
+        } else if ($(pluginError).html().contains('ContactDupeERR02')) {
+            $("[data-name='tab_PersonalInformation']").prepend(contactErrSnippets.Err02);
+        } else if ($(pluginError).html().contains('ContactDupeERR03')) {
+            setCookie('vaccineType', '100000002');
+            
+            window.location = '/en-US/existingcontact-emailmessage/' + "?id=" + pluginError.html().split('|')[1];
+        }
+    }
+}
+function futureDOBValidator(id)
+{
+	var newvalidator = document.createElement("span");
+	newvalidator.style.display ="none";
+	newvalidator.id = id + "validatordob";
+	newvalidator.controltovalidate = id;
+	newvalidator.initialvalue ="";
+	newvalidator.evaluationfunction = function() {
+			var TodayDate = new Date();
+			var year = $('#msemr_year').val();
+			var CurrentYear = TodayDate.getFullYear();
+			var YearError = "The birth month, day, and year must be greater than 1900 and not in the future.";
+			if(year > CurrentYear)
+			{
+				newvalidator.errormessage = "<a href='#" + id +"'>" + YearError + "</a>";
+					return false;
+			}
+			else if(year == CurrentYear)
+			{
+				var month  = $("#msemr_monthofbirth :selected").text();
+				var day = $("#msemr_dayofbirth :selected").text();
+				if (month != " " && day != " ")
+				{
+				const SelectedDate = new Date(month +day + "," + year);
+					if(SelectedDate > TodayDate)
+					{
+					newvalidator.errormessage = "<a href='#" + id +"'>" + YearError + "</a>";
+					return false;
+					}
+				return true;	
+				}
+			return true;
+			}				
+			else
+			{
+			return true;	
+			}
+					
+		
+	};
+	Page_Validators.push(newvalidator);
+	
+	$("a[href='#"+id+"_label']").on("click",function(){
+		scrollToAndFocus(id + "_label", id);
+	});
+}
+$(document).ready(function () {
+	
+	futureDOBValidator("msemr_year");
+    $('.tab-title').after(`<div style="font-size: 20px;" tabindex="1">To help us determine if we have the necessary personal information to be vaccinated at one of our vaccination sites, please provide the following:</div>
+
+<ul>
+	<li style="font-size: 20px;" tabindex="1">If we find a match, we'll send you an email with a link and instructions for you to confirm your identity.</li>
+	<li style="font-size: 20px;" tabindex="1">If we do not find a match, you'll continue with personal information.</li>
+</ul>
+
+
+`);
+    $("#emailaddress1, #emailaddress2").removeAttr("ondblclick");
+    var asteriskHtml = `<div id="asteriskIndicationDiv" class="required-text-info"><p><span>*</span>Indicates required field</p></div>`;
+    $("[data-name='tab_PersonalInformation']").prepend(asteriskHtml);
+
+    // pretty display of plugin error messages
+    LoadPrettyError();
+
+    $('#liquid_form').css("overflow", "hidden"); //this piece of code is to hide the scroll bar on contact details page
+
+    $('.below.error-day').addClass("hide");
+    $('.below.error-month').addClass("hide");
+    $('.below.error-year').addClass("hide");
+    //Day Change Logic
+    $("#msemr_dayofbirth").change(function () {
+        var date = $('#msemr_dayofbirth').val();
+        var month = $('#msemr_monthofbirth').val();
+        var year = $('#msemr_year').val();
+        //April, June, September - Show an error if they pick the 31st
+        if ((month == 935000004 || month == 935000006 || month == 935000009 || month == 935000011) && date == 935000031 && month != " ") {
+            $('#msemr_dayofbirth').addClass("error");
+            $(".below.error-day").removeClass("hide");
+            $('#msemr_monthofbirth').addClass("error");
+            $(".below.error-month").removeClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        //They pick a date less than the 31st    
+        if ((month == 935000004 || month == 935000006 || month == 935000009 || month == 935000011) && date != 935000031 && month != " ") {
+            $('#msemr_dayofbirth').removeClass("error");
+            $(".below.error-day").addClass("hide");
+            $('#msemr_monthofbirth').removeClass("error");
+            $(".below.error-month").addClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        //February - leap year logiv
+        if (month == 935000002 && date != " " && year != " ") {
+            var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+            if (date > 935000029 || (date == 935000029 && !isleap)) {
+                $('#msemr_dayofbirth').addClass("error");
+                $(".below.error-day").removeClass("hide");
+                $('#msemr_monthofbirth').addClass("error");
+                $(".below.error-month").removeClass("hide");
+                $('#msemr_year').addClass("error");
+                $(".below.error-year").removeClass("hide");
+            }
+            else {
+                $('#msemr_dayofbirth').removeClass("error");
+                $(".below.error-day").addClass("hide");
+                $('#msemr_monthofbirth').removeClass("error");
+                $(".below.error-month").addClass("hide");
+                $('#msemr_year').removeClass("error");
+                $(".below.error-year").addClass("hide");
+            }
+        }
+        if (month == 935000002 && date != " " && year == " ") {
+            if (date > 935000028 || (date == 935000028)) {
+                $('#msemr_dayofbirth').hideClass("error");
+                $(".below.error-day").addClass("hide");
+                $('#msemr_monthofbirth').removeClass("error");
+                $(".below.error-month").addClass("hide");
+                $('#msemr_year').removeClass("error");
+                $(".below.error-year").addClass("hide");
+            }
+            else { }
+        }
+        if ((month == 935000001 || month == 935000003 || month == 935000005 || month == 935000006 || month == 935000007 || month == 935000008 || month == 935000010 || month == 935000012)) {
+            $('#msemr_dayofbirth').removeClass("error");
+            $(".below.error-day").addClass("hide");
+            $('#msemr_monthofbirth').removeClass("error");
+            $(".below.error-month").addClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        else { }
+    });
+    //Month Change Logic
+    $("#msemr_monthofbirth").change(function () {
+        var date = $('#msemr_dayofbirth').val();
+        var month = $('#msemr_monthofbirth').val();
+        var year = $('#msemr_year').val();
+        //30 day month logic - Insert 
+        if ((month == 935000004 || month == 935000006 || month == 935000009 || month == 935000011) && date == 935000031 && month != " ") {
+            $('#msemr_dayofbirth').addClass("error");
+            $(".below.error-day").removeClass("hide");
+            $('#msemr_monthofbirth').addClass("error");
+            $(".below.error-month").removeClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        //30 day month logic - Update
+        if ((month == 935000004 || month == 935000006 || month == 935000009 || month == 935000011) && date != 935000031 && month != " ") {
+            $('#msemr_dayofbirth').removeClass("error");
+            $(".below.error-day").addClass("hide");
+            $('#msemr_monthofbirth').removeClass("error");
+            $(".below.error-month").addClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        //Feb Logic
+        if (month == 935000002 && date != " " && year != " ") {
+            var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+            if (date > 935000029 || (date == 935000029 && !isleap)) {
+                $('#msemr_dayofbirth').addClass("error");
+                $(".below.error-day").removeClass("hide");
+                $('#msemr_monthofbirth').addClass("error");
+                $(".below.error-month").removeClass("hide");
+                $('#msemr_year').removeClass("error");
+                $(".below.error-year").addClass("hide");
+            }
+            else { }
+        }
+        else if ((month == 935000001 || month == 935000003 || month == 935000005 || month == 935000006 || month == 935000007 || month == 935000008 || month == 935000010 || month == 935000012)) {
+            $('#msemr_dayofbirth').removeClass("error");
+            $(".below.error-day").addClass("hide");
+            $('#msemr_monthofbirth').removeClass("error");
+            $(".below.error-month").addClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        else { }
+    });
+    //Year Change Logic
+    $("#msemr_year").change(function () {
+        var date = $('#msemr_dayofbirth').val();
+        var month = $('#msemr_monthofbirth').val();
+        var year = $('#msemr_year').val();
+        //30 day month logic - Insert 
+        if ((month == 935000004 || month == 935000006 || month == 935000009 || month == 935000011) && date == 935000031 && month != " ") {
+            $('#msemr_dayofbirth').addClass("error");
+            $(".below.error-day").removeClass("hide");
+            $('#msemr_monthofbirth').addClass("error");
+            $(".below.error-month").removeClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        //30 day month logic - Update
+        if ((month == 935000004 || month == 935000006 || month == 935000009 || month == 935000011) && date != 935000031 && month != " ") {
+            $('#msemr_dayofbirth').removeClass("error");
+            $(".below.error-day").addClass("hide");
+            $('#msemr_monthofbirth').removeClass("error");
+            $(".below.error-month").addClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        //Feb Logic
+        if (month == 935000002 && date != " " && year != " ") {
+            var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+            if (date > 935000029 || (date == 935000029 && !isleap)) {
+                $('#msemr_dayofbirth').addClass("error");
+                $(".below.error-day").removeClass("hide");
+                $('#msemr_monthofbirth').addClass("error");
+                $(".below.error-month").removeClass("hide");
+                $('#msemr_year').addClass("error");
+                $(".below.error-year").removeClass("hide");
+            }
+            else {
+                $('#msemr_dayofbirth').removeClass("error");
+                $(".below.error-day").addClass("hide");
+                $('#msemr_monthofbirth').removeClass("error");
+                $(".below.error-month").addClass("hide");
+                $('#msemr_year').removeClass("error");
+                $(".below.error-year").addClass("hide");
+            }
+        }
+        else if ((month == 935000001 || month == 935000003 || month == 935000005 || month == 935000006 || month == 935000007 || month == 935000008 || month == 935000010 || month == 935000012)) {
+            $('#msemr_dayofbirth').removeClass("error");
+            $(".below.error-day").addClass("hide");
+            $('#msemr_monthofbirth').removeClass("error");
+            $(".below.error-month").addClass("hide");
+            $('#msemr_year').removeClass("error");
+            $(".below.error-year").addClass("hide");
+        }
+        else { }
+    });
+});
+$(document).ready(function () {
+    
+ $('#emailaddress2').closest('div').append(`<span style="display:none;" id="confirmDiv" class="description below error">Email addresses don't match, please check fields.</div>`);
+
+    $("#emailaddress1, #emailaddress2").change(function () {
+        var email = $('#emailaddress1').val();
+        var confirmEmail = $('#emailaddress2').val();
+
+        if (email != "" && confirmEmail != "") {
+            if (email == confirmEmail) {
+                $('#emailaddress2').removeClass("error");
+                $('#confirmDiv').css("display", "none");
+                $("#NextButton").prop('disabled', false);
+            }
+            else {
+                $('#emailaddress2').addClass("error");
+                $('#confirmDiv').css("display", "inline-block");
+                $("#NextButton").prop('disabled', true);
+            }
+        }
+
+        else if (email == "" && confirmEmail != "") {
+            $('#emailaddress2').addClass("error");
+            $('#confirmDiv').css("display", "inline-block");
+            $("#NextButton").prop('disabled', true);
+        }
+
+        else if (email != "" && confirmEmail == "") {
+            $('#emailaddress2').removeClass("error");
+            $('#confirmDiv').css("display", "none");
+            $("#NextButton").prop('disabled', false);
+        }
+        else if (email == "" && confirmEmail == "") {
+            $('#emailaddress2').removeClass("error");
+            $('#confirmDiv').css("display", "none");
+            $("#NextButton").prop('disabled', false);
+        }
+    });
+
+});
+</script></span><input type="hidden" name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$confirmOnExit" id="confirmOnExit" value="true" /><input type="hidden" name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$confirmOnExitMessage" id="confirmOnExitMessage" value="The&#32;resident&#32;profile&#32;will&#32;not&#32;be&#32;created,&#32;and&#32;any&#32;changes&#32;will&#32;be&#32;lost.&#32;" /><div id="WebFormPanel" class="crmEntityFormView" onkeypress="javascript:return&#32;WebForm_FireDefaultButton(event,&#32;&#39;NextButton&#39;)">
+		<div id="EntityFormView" class="entity-form">
+			<input type="hidden" name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$EntityFormView_EntityName" id="EntityFormView_EntityName" value="contact" /><input type="hidden" name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$EntityFormView_EntityID" id="EntityFormView_EntityID" /><input type="hidden" name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$EntityFormView_EntityState" id="EntityFormView_EntityState" /><input type="hidden" name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$EntityFormView_EntityStatus" id="EntityFormView_EntityStatus" /><span id="EntityFormView_EntityLayoutConfig" data-form-layout="{&quot;EntityName&quot;:&quot;contact&quot;,&quot;Id&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;SubmitActionLink&quot;:{&quot;Modal&quot;:{},&quot;Type&quot;:0,&quot;Enabled&quot;:false,&quot;ShowModal&quot;:0,&quot;FilterCriteriaId&quot;:&quot;278ae113-9237-4269-98ce-1cb9517e5ee4&quot;},&quot;PreviousActionLink&quot;:{&quot;Type&quot;:0,&quot;Enabled&quot;:false,&quot;ShowModal&quot;:0,&quot;FilterCriteriaId&quot;:&quot;f82075c8-c391-43f0-9f3a-f4fb182ef2f9&quot;},&quot;NextActionLink&quot;:{&quot;Type&quot;:0,&quot;Enabled&quot;:false,&quot;ShowModal&quot;:0,&quot;FilterCriteriaId&quot;:&quot;55253f47-2f85-4f15-822c-41f53db3d0db&quot;},&quot;CreateRelatedRecordActionLink&quot;:{&quot;Modal&quot;:{},&quot;Type&quot;:0,&quot;Enabled&quot;:false,&quot;ShowModal&quot;:0,&quot;FilterCriteriaId&quot;:&quot;ca2cb09e-0d0f-436a-b985-af839ad48b30&quot;},&quot;EnableEntityPermissions&quot;:false,&quot;LanguageCode&quot;:0,&quot;EnableActions&quot;:false,&quot;ShowActionButtonContainer&quot;:0,&quot;AutoGenerateSteps&quot;:false}"></span><div id="ValidationSummaryEntityFormView" class="validation-summary&#32;alert&#32;alert-error&#32;alert-danger&#32;alert-block" role="alert" style="display:none;">
+
+			</div><h2 class="tab-title">Personal Information</h2><div data-name="tab_PersonalInformation" class="tab&#32;clearfix"><div class="tab-column" style="width:100%;"><div><fieldset aria-label="Contact&#32;Details"><table role="presentation" data-name="section_ContactDetails" class="section"><colgroup><col style="width:33.3333333333333%;" /><col style="width:33.3333333333333%;" /><col style="width:33.3333333333333%;" /><col /></colgroup><tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;text&#32;form-control-cell"><div class="info&#32;required"><label for="firstname" id="firstname_label" class="field-label">First name</label><div class="validators"><span id="RequiredFieldValidatorfirstname" style="display:none;">*</span><span id="RegularExpressionValidatorfirstname" style="display:none;"></span><span id="MaximumLengthValidatorfirstname" style="visibility:hidden;">*</span></div></div><div class="control"><input name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$firstname" type="text" maxlength="50" id="firstname" class="text&#32;form-control&#32;" onchange="setIsDirty(this.id);" aria-required="true" title="First&#32;name&#32;is&#32;required" aria-label="First&#32;name" onkeypress="javascript:return&#32;LengthError(this,&#32;event);" /></div></td>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;text&#32;form-control-cell"><div class="info"><label for="middlename" id="middlename_label" class="field-label">Middle name (optional)</label><div class="validators"><span id="RegularExpressionValidatormiddlename" style="display:none;"></span><span id="MaximumLengthValidatormiddlename" style="visibility:hidden;">*</span></div></div><div class="control"><input name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$middlename" type="text" maxlength="50" id="middlename" class="text&#32;form-control&#32;" onchange="setIsDirty(this.id);" onkeypress="javascript:return&#32;LengthError(this,&#32;event);" /></div></td>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;text&#32;form-control-cell"><div class="info&#32;required"><label for="lastname" id="lastname_label" class="field-label">Last name</label><div class="validators"><span id="RequiredFieldValidatorlastname" style="display:none;">*</span><span id="RegularExpressionValidatorlastname" style="display:none;"></span><span id="MaximumLengthValidatorlastname" style="visibility:hidden;">*</span></div></div><div class="control"><input name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$lastname" type="text" maxlength="50" id="lastname" class="text&#32;form-control&#32;" onchange="setIsDirty(this.id);" aria-required="true" title="Last&#32;name&#32;is&#32;required." aria-label="Last&#32;name" onkeypress="javascript:return&#32;LengthError(this,&#32;event);" /></div></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;picklist-cell"><div class="info&#32;required"><label for="msemr_monthofbirth" id="msemr_monthofbirth_label" class="field-label">Month of Birth</label><div class="validators"><span id="RequiredFieldValidatormsemr_monthofbirth" style="display:none;">*</span></div></div><div class="control"><select name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$msemr_monthofbirth" id="msemr_monthofbirth" class="form-control&#32;picklist&#32;error-month" aria-roledescription="Enter&#32;a&#32;valid&#32;month" onchange="setIsDirty(this.id);" required="" aria-invalid="false" title="Please&#32;select&#32;an&#32;item&#32;in&#32;this&#32;list">
+					<option value="" label="&#32;" aria-label="Blank"></option>
+					<option selected="selected" value="935000001">January</option>
+					<option value="935000002">February</option>
+					<option value="935000003">March</option>
+					<option value="935000004">April</option>
+					<option value="935000005">May</option>
+					<option value="935000006">June</option>
+					<option value="935000007">July</option>
+					<option value="935000008">August</option>
+					<option value="935000009">September</option>
+					<option value="935000010">October</option>
+					<option value="935000011">November</option>
+					<option value="935000012">December</option>
+
+				</select></div><div class="description&#32;below&#32;error-month">Enter a valid month</div></td>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;picklist-cell"><div class="info&#32;required"><label for="msemr_dayofbirth" id="msemr_dayofbirth_label" class="field-label">Day of Birth</label><div class="validators"><span id="RequiredFieldValidatormsemr_dayofbirth" style="display:none;">*</span></div></div><div class="control"><select name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$msemr_dayofbirth" id="msemr_dayofbirth" class="form-control&#32;picklist&#32;error-day" aria-roledescription="Enter&#32;a&#32;valid&#32;day." onchange="setIsDirty(this.id);" required="" aria-invalid="false" title="Please&#32;select&#32;an&#32;item&#32;in&#32;this&#32;list">
+					<option value="" label="&#32;" aria-label="Blank"></option>
+					<option selected="selected" value="935000001">1</option>
+					<option value="935000002">2</option>
+					<option value="935000003">3</option>
+					<option value="935000004">4</option>
+					<option value="935000005">5</option>
+					<option value="935000006">6</option>
+					<option value="935000007">7</option>
+					<option value="935000008">8</option>
+					<option value="935000009">9</option>
+					<option value="935000010">10</option>
+					<option value="935000011">11</option>
+					<option value="935000012">12</option>
+					<option value="935000013">13</option>
+					<option value="935000014">14</option>
+					<option value="935000015">15</option>
+					<option value="935000016">16</option>
+					<option value="935000017">17</option>
+					<option value="935000018">18</option>
+					<option value="935000019">19</option>
+					<option value="935000020">20</option>
+					<option value="935000021">21</option>
+					<option value="935000022">22</option>
+					<option value="935000023">23</option>
+					<option value="935000024">24</option>
+					<option value="935000025">25</option>
+					<option value="935000026">26</option>
+					<option value="935000027">27</option>
+					<option value="935000028">28</option>
+					<option value="935000029">29</option>
+					<option value="935000030">30</option>
+					<option value="935000031">31</option>
+
+				</select></div><div class="description&#32;below&#32;error-day">Enter a valid day.</div></td>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;integer&#32;form-control-cell"><div class="info&#32;required"><label for="msemr_year" id="msemr_year_label" class="field-label">Year</label><div class="validators"><span id="IntegerValidatormsemr_year" style="visibility:hidden;">*</span><span id="RangeValidatormsemr_year" style="visibility:hidden;">*</span><span id="RequiredFieldValidatormsemr_year" style="display:none;">*</span><span id="RegularExpressionValidatormsemr_year" style="visibility:hidden;">*</span></div></div><div class="control"><input name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$msemr_year" type="text" value="1900" id="msemr_year" class="text&#32;integer&#32;form-control&#32;error-year" required="" onfocus="validateRequiredField(this.id);" aria-roledescription="Enter&#32;a&#32;valid&#32;year" onchange="setIsDirty(this.id);" /></div><div class="description&#32;below&#32;error-year">Enter a valid year</div></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;text&#32;form-control-cell"><div class="info&#32;required"><label for="emailaddress1" id="emailaddress1_label" class="field-label">Email address</label><div class="validators"><span id="EmailFormatValidatoremailaddress1" style="visibility:hidden;">*</span><span id="RequiredFieldValidatoremailaddress1" style="display:none;">*</span><span id="RegularExpressionValidatoremailaddress1" style="display:none;"></span><span id="MaximumLengthValidatoremailaddress1" style="visibility:hidden;">*</span></div></div><div class="control"><input name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$emailaddress1" maxlength="100" id="emailaddress1" class="text&#32;form-control&#32;" type="email" ondblclick="launchEmail(this.value);" onchange="setIsDirty(this.id);" required="" onkeypress="javascript:return&#32;LengthError(this,&#32;event);" style="text-decoration:underline;" /></div></td>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell"></td>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell"></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;text&#32;form-control-cell"><div class="info&#32;required"><label for="emailaddress2" id="emailaddress2_label" class="field-label">Confirm email address</label><div class="validators"><span id="EmailFormatValidatoremailaddress2" style="visibility:hidden;">*</span><span id="RequiredFieldValidatoremailaddress2" style="display:none;">*</span><span id="RegularExpressionValidatoremailaddress2" style="display:none;"></span><span id="MaximumLengthValidatoremailaddress2" style="visibility:hidden;">*</span></div></div><div class="control"><input name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$EntityFormView$emailaddress2" maxlength="100" id="emailaddress2" class="text&#32;form-control&#32;" type="email" ondblclick="launchEmail(this.value);" onchange="setIsDirty(this.id);" required="" onkeypress="javascript:return&#32;LengthError(this,&#32;event);" style="text-decoration:underline;" /></div></td>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell"></td>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell"></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			</table></fieldset></div></div></div>
+		</div><div class="actions"><div class="col-sm-6&#32;clearfix">
+			<div role ="group" class="btn-group entity-action-button" ><input type="button" name="ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$NextButton" value="Next" onclick="javascript:if(typeof&#32;webFormClientValidate&#32;===&#32;&#39;function&#39;){if(webFormClientValidate()){if(typeof&#32;Page_ClientValidate&#32;===&#32;&#39;function&#39;){if(Page_ClientValidate(&#39;&#39;)){clearIsDirty();disableButtons();this.value&#32;=&#32;&#39;Processing...&#39;;}}else{clearIsDirty();disableButtons();this.value&#32;=&#32;&#39;Processing...&#39;;}}else{return&#32;false;}}else{if(typeof&#32;Page_ClientValidate&#32;===&#32;&#39;function&#39;){if(Page_ClientValidate(&#39;&#39;)){clearIsDirty();disableButtons();this.value&#32;=&#32;&#39;Processing...&#39;;}}else{clearIsDirty();disableButtons();this.value&#32;=&#32;&#39;Processing...&#39;;}};WebForm_DoPostBackWithOptions(new&#32;WebForm_PostBackOptions(&quot;ctl00$ContentContainer$WebFormControl_e2b09e80f4f4eb1194ef000d3a3416d2$NextButton&quot;,&#32;&quot;&quot;,&#32;true,&#32;&quot;&quot;,&#32;&quot;&quot;,&#32;false,&#32;true))" id="NextButton" class="btn&#32;btn-primary&#32;button&#32;next&#32;submit-btn" nonActionLinkButton="true" /></div>
+		</div></div>
+	</div>
+</div>
+    
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("ValidationSummaryEntityFormView"));
+var Page_Validators =  new Array(document.getElementById("RequiredFieldValidatorfirstname"), document.getElementById("RegularExpressionValidatorfirstname"), document.getElementById("MaximumLengthValidatorfirstname"), document.getElementById("RegularExpressionValidatormiddlename"), document.getElementById("MaximumLengthValidatormiddlename"), document.getElementById("RequiredFieldValidatorlastname"), document.getElementById("RegularExpressionValidatorlastname"), document.getElementById("MaximumLengthValidatorlastname"), document.getElementById("RequiredFieldValidatormsemr_monthofbirth"), document.getElementById("RequiredFieldValidatormsemr_dayofbirth"), document.getElementById("IntegerValidatormsemr_year"), document.getElementById("RangeValidatormsemr_year"), document.getElementById("RequiredFieldValidatormsemr_year"), document.getElementById("RegularExpressionValidatormsemr_year"), document.getElementById("EmailFormatValidatoremailaddress1"), document.getElementById("RequiredFieldValidatoremailaddress1"), document.getElementById("RegularExpressionValidatoremailaddress1"), document.getElementById("MaximumLengthValidatoremailaddress1"), document.getElementById("EmailFormatValidatoremailaddress2"), document.getElementById("RequiredFieldValidatoremailaddress2"), document.getElementById("RegularExpressionValidatoremailaddress2"), document.getElementById("MaximumLengthValidatoremailaddress2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ValidationSummaryEntityFormView = document.all ? document.all["ValidationSummaryEntityFormView"] : document.getElementById("ValidationSummaryEntityFormView");
+ValidationSummaryEntityFormView.headertext = "<h2 class=\'validation-header\'><span role=\'presentation\' class=\'fa fa-info-circle\'></span> The form could not be submitted for the following reasons:</h2>";
+var RequiredFieldValidatorfirstname = document.all ? document.all["RequiredFieldValidatorfirstname"] : document.getElementById("RequiredFieldValidatorfirstname");
+RequiredFieldValidatorfirstname.controltovalidate = "firstname";
+RequiredFieldValidatorfirstname.errormessage = "<a href=\'#firstname_label\' onclick=\'javascript:scrollToAndFocus(\"firstname_label\",\"firstname\");return false;\' referenceControlId=firstname>First name is required </a>";
+RequiredFieldValidatorfirstname.display = "Dynamic";
+RequiredFieldValidatorfirstname.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidatorfirstname.initialvalue = "";
+var RegularExpressionValidatorfirstname = document.all ? document.all["RegularExpressionValidatorfirstname"] : document.getElementById("RegularExpressionValidatorfirstname");
+RegularExpressionValidatorfirstname.controltovalidate = "firstname";
+RegularExpressionValidatorfirstname.errormessage = "<a href=\'#firstname_label\' onclick=\'javascript:scrollToAndFocus(\"firstname_label\",\"firstname\");return false;\' referenceControlId=firstname>First name can be a combination of \'-\' character, alphabets, and spaces only. </a>";
+RegularExpressionValidatorfirstname.display = "None";
+RegularExpressionValidatorfirstname.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidatorfirstname.validationexpression = "^[a-zA-Z \'-]*\\s*$";
+var MaximumLengthValidatorfirstname = document.all ? document.all["MaximumLengthValidatorfirstname"] : document.getElementById("MaximumLengthValidatorfirstname");
+MaximumLengthValidatorfirstname.controltovalidate = "firstname";
+MaximumLengthValidatorfirstname.errormessage = "<a href=\'#firstname_label\' onclick=\'javascript:scrollToAndFocus(\"firstname_label\",\"firstname\");return false;\' referenceControlId=firstname>First name exceeds the maximum length of 50 characters. </a>";
+MaximumLengthValidatorfirstname.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RegularExpressionValidatormiddlename = document.all ? document.all["RegularExpressionValidatormiddlename"] : document.getElementById("RegularExpressionValidatormiddlename");
+RegularExpressionValidatormiddlename.controltovalidate = "middlename";
+RegularExpressionValidatormiddlename.errormessage = "<a href=\'#middlename_label\' onclick=\'javascript:scrollToAndFocus(\"middlename_label\",\"middlename\");return false;\' referenceControlId=middlename>Middle name can be a combination of \'-\' character, alphabets, and spaces only.  </a>";
+RegularExpressionValidatormiddlename.display = "None";
+RegularExpressionValidatormiddlename.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidatormiddlename.validationexpression = "^[a-zA-Z \'-]*\\s*$";
+var MaximumLengthValidatormiddlename = document.all ? document.all["MaximumLengthValidatormiddlename"] : document.getElementById("MaximumLengthValidatormiddlename");
+MaximumLengthValidatormiddlename.controltovalidate = "middlename";
+MaximumLengthValidatormiddlename.errormessage = "<a href=\'#middlename_label\' onclick=\'javascript:scrollToAndFocus(\"middlename_label\",\"middlename\");return false;\' referenceControlId=middlename>Middle name (optional) exceeds the maximum length of 50 characters. </a>";
+MaximumLengthValidatormiddlename.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RequiredFieldValidatorlastname = document.all ? document.all["RequiredFieldValidatorlastname"] : document.getElementById("RequiredFieldValidatorlastname");
+RequiredFieldValidatorlastname.controltovalidate = "lastname";
+RequiredFieldValidatorlastname.errormessage = "<a href=\'#lastname_label\' onclick=\'javascript:scrollToAndFocus(\"lastname_label\",\"lastname\");return false;\' referenceControlId=lastname>Last name is required. </a>";
+RequiredFieldValidatorlastname.display = "Dynamic";
+RequiredFieldValidatorlastname.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidatorlastname.initialvalue = "";
+var RegularExpressionValidatorlastname = document.all ? document.all["RegularExpressionValidatorlastname"] : document.getElementById("RegularExpressionValidatorlastname");
+RegularExpressionValidatorlastname.controltovalidate = "lastname";
+RegularExpressionValidatorlastname.errormessage = "<a href=\'#lastname_label\' onclick=\'javascript:scrollToAndFocus(\"lastname_label\",\"lastname\");return false;\' referenceControlId=lastname>Last name can be a combination of \'-\' character, alphabets, and spaces only. </a>";
+RegularExpressionValidatorlastname.display = "None";
+RegularExpressionValidatorlastname.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidatorlastname.validationexpression = "^[a-zA-Z \'-]*\\s*$";
+var MaximumLengthValidatorlastname = document.all ? document.all["MaximumLengthValidatorlastname"] : document.getElementById("MaximumLengthValidatorlastname");
+MaximumLengthValidatorlastname.controltovalidate = "lastname";
+MaximumLengthValidatorlastname.errormessage = "<a href=\'#lastname_label\' onclick=\'javascript:scrollToAndFocus(\"lastname_label\",\"lastname\");return false;\' referenceControlId=lastname>Last name exceeds the maximum length of 50 characters. </a>";
+MaximumLengthValidatorlastname.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RequiredFieldValidatormsemr_monthofbirth = document.all ? document.all["RequiredFieldValidatormsemr_monthofbirth"] : document.getElementById("RequiredFieldValidatormsemr_monthofbirth");
+RequiredFieldValidatormsemr_monthofbirth.controltovalidate = "msemr_monthofbirth";
+RequiredFieldValidatormsemr_monthofbirth.errormessage = "<a href=\'#msemr_monthofbirth_label\' onclick=\'javascript:scrollToAndFocus(\"msemr_monthofbirth_label\",\"msemr_monthofbirth\");return false;\' referenceControlId=msemr_monthofbirth>Month of Birth is a required field. </a>";
+RequiredFieldValidatormsemr_monthofbirth.display = "Dynamic";
+RequiredFieldValidatormsemr_monthofbirth.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidatormsemr_monthofbirth.initialvalue = "";
+var RequiredFieldValidatormsemr_dayofbirth = document.all ? document.all["RequiredFieldValidatormsemr_dayofbirth"] : document.getElementById("RequiredFieldValidatormsemr_dayofbirth");
+RequiredFieldValidatormsemr_dayofbirth.controltovalidate = "msemr_dayofbirth";
+RequiredFieldValidatormsemr_dayofbirth.errormessage = "<a href=\'#msemr_dayofbirth_label\' onclick=\'javascript:scrollToAndFocus(\"msemr_dayofbirth_label\",\"msemr_dayofbirth\");return false;\' referenceControlId=msemr_dayofbirth>Day of Birth is a required field. </a>";
+RequiredFieldValidatormsemr_dayofbirth.display = "Dynamic";
+RequiredFieldValidatormsemr_dayofbirth.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidatormsemr_dayofbirth.initialvalue = "";
+var IntegerValidatormsemr_year = document.all ? document.all["IntegerValidatormsemr_year"] : document.getElementById("IntegerValidatormsemr_year");
+IntegerValidatormsemr_year.controltovalidate = "msemr_year";
+IntegerValidatormsemr_year.errormessage = "<a href=\'#msemr_year_label\' onclick=\'javascript:scrollToAndFocus(\"msemr_year_label\",\"msemr_year\");return false;\' referenceControlId=msemr_year>Year must be a valid integer value. </a>";
+IntegerValidatormsemr_year.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RangeValidatormsemr_year = document.all ? document.all["RangeValidatormsemr_year"] : document.getElementById("RangeValidatormsemr_year");
+RangeValidatormsemr_year.controltovalidate = "msemr_year";
+RangeValidatormsemr_year.errormessage = "<a href=\'#msemr_year_label\' onclick=\'javascript:scrollToAndFocus(\"msemr_year_label\",\"msemr_year\");return false;\' referenceControlId=msemr_year>Year must have a value between 1900 and 2999. </a>";
+RangeValidatormsemr_year.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RequiredFieldValidatormsemr_year = document.all ? document.all["RequiredFieldValidatormsemr_year"] : document.getElementById("RequiredFieldValidatormsemr_year");
+RequiredFieldValidatormsemr_year.controltovalidate = "msemr_year";
+RequiredFieldValidatormsemr_year.errormessage = "<a href=\'#msemr_year_label\' onclick=\'javascript:scrollToAndFocus(\"msemr_year_label\",\"msemr_year\");return false;\' referenceControlId=msemr_year>Year is a required field. </a>";
+RequiredFieldValidatormsemr_year.display = "Dynamic";
+RequiredFieldValidatormsemr_year.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidatormsemr_year.initialvalue = "";
+var RegularExpressionValidatormsemr_year = document.all ? document.all["RegularExpressionValidatormsemr_year"] : document.getElementById("RegularExpressionValidatormsemr_year");
+RegularExpressionValidatormsemr_year.controltovalidate = "msemr_year";
+RegularExpressionValidatormsemr_year.errormessage = "<a href=\'#msemr_year_label\' onclick=\'javascript:scrollToAndFocus(\"msemr_year_label\",\"msemr_year\");return false;\' referenceControlId=msemr_year>The birth month, day, and year must be greater than 1900 and not in the future. </a>";
+RegularExpressionValidatormsemr_year.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidatormsemr_year.validationexpression = "^(19[0-9][0-9]|20[0-9][0-9])$";
+var EmailFormatValidatoremailaddress1 = document.all ? document.all["EmailFormatValidatoremailaddress1"] : document.getElementById("EmailFormatValidatoremailaddress1");
+EmailFormatValidatoremailaddress1.controltovalidate = "emailaddress1";
+EmailFormatValidatoremailaddress1.errormessage = "<a href=\'#emailaddress1_label\' onclick=\'javascript:scrollToAndFocus(\"emailaddress1_label\",\"emailaddress1\");return false;\' referenceControlId=emailaddress1>Email address must be a valid email address. </a>";
+EmailFormatValidatoremailaddress1.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RequiredFieldValidatoremailaddress1 = document.all ? document.all["RequiredFieldValidatoremailaddress1"] : document.getElementById("RequiredFieldValidatoremailaddress1");
+RequiredFieldValidatoremailaddress1.controltovalidate = "emailaddress1";
+RequiredFieldValidatoremailaddress1.errormessage = "<a href=\'#emailaddress1_label\' onclick=\'javascript:scrollToAndFocus(\"emailaddress1_label\",\"emailaddress1\");return false;\' referenceControlId=emailaddress1>Email address is required. </a>";
+RequiredFieldValidatoremailaddress1.display = "Dynamic";
+RequiredFieldValidatoremailaddress1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidatoremailaddress1.initialvalue = "";
+var RegularExpressionValidatoremailaddress1 = document.all ? document.all["RegularExpressionValidatoremailaddress1"] : document.getElementById("RegularExpressionValidatoremailaddress1");
+RegularExpressionValidatoremailaddress1.controltovalidate = "emailaddress1";
+RegularExpressionValidatoremailaddress1.errormessage = "<a href=\'#emailaddress1_label\' onclick=\'javascript:scrollToAndFocus(\"emailaddress1_label\",\"emailaddress1\");return false;\' referenceControlId=emailaddress1>Email address is not in correct format. </a>";
+RegularExpressionValidatoremailaddress1.display = "None";
+RegularExpressionValidatoremailaddress1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidatoremailaddress1.validationexpression = "^\\S+@\\S+$";
+var MaximumLengthValidatoremailaddress1 = document.all ? document.all["MaximumLengthValidatoremailaddress1"] : document.getElementById("MaximumLengthValidatoremailaddress1");
+MaximumLengthValidatoremailaddress1.controltovalidate = "emailaddress1";
+MaximumLengthValidatoremailaddress1.errormessage = "<a href=\'#emailaddress1_label\' onclick=\'javascript:scrollToAndFocus(\"emailaddress1_label\",\"emailaddress1\");return false;\' referenceControlId=emailaddress1>Email address exceeds the maximum length of 100 characters. </a>";
+MaximumLengthValidatoremailaddress1.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var EmailFormatValidatoremailaddress2 = document.all ? document.all["EmailFormatValidatoremailaddress2"] : document.getElementById("EmailFormatValidatoremailaddress2");
+EmailFormatValidatoremailaddress2.controltovalidate = "emailaddress2";
+EmailFormatValidatoremailaddress2.errormessage = "<a href=\'#emailaddress2_label\' onclick=\'javascript:scrollToAndFocus(\"emailaddress2_label\",\"emailaddress2\");return false;\' referenceControlId=emailaddress2>Confirm email address must be a valid email address. </a>";
+EmailFormatValidatoremailaddress2.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RequiredFieldValidatoremailaddress2 = document.all ? document.all["RequiredFieldValidatoremailaddress2"] : document.getElementById("RequiredFieldValidatoremailaddress2");
+RequiredFieldValidatoremailaddress2.controltovalidate = "emailaddress2";
+RequiredFieldValidatoremailaddress2.errormessage = "<a href=\'#emailaddress2_label\' onclick=\'javascript:scrollToAndFocus(\"emailaddress2_label\",\"emailaddress2\");return false;\' referenceControlId=emailaddress2>Confirm the email address. </a>";
+RequiredFieldValidatoremailaddress2.display = "Dynamic";
+RequiredFieldValidatoremailaddress2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidatoremailaddress2.initialvalue = "";
+var RegularExpressionValidatoremailaddress2 = document.all ? document.all["RegularExpressionValidatoremailaddress2"] : document.getElementById("RegularExpressionValidatoremailaddress2");
+RegularExpressionValidatoremailaddress2.controltovalidate = "emailaddress2";
+RegularExpressionValidatoremailaddress2.errormessage = "<a href=\'#emailaddress2_label\' onclick=\'javascript:scrollToAndFocus(\"emailaddress2_label\",\"emailaddress2\");return false;\' referenceControlId=emailaddress2>Confirm email address is not in correct format. </a>";
+RegularExpressionValidatoremailaddress2.display = "None";
+RegularExpressionValidatoremailaddress2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidatoremailaddress2.validationexpression = "^\\S+@\\S+$";
+var MaximumLengthValidatoremailaddress2 = document.all ? document.all["MaximumLengthValidatoremailaddress2"] : document.getElementById("MaximumLengthValidatoremailaddress2");
+MaximumLengthValidatoremailaddress2.controltovalidate = "emailaddress2";
+MaximumLengthValidatoremailaddress2.errormessage = "<a href=\'#emailaddress2_label\' onclick=\'javascript:scrollToAndFocus(\"emailaddress2_label\",\"emailaddress2\");return false;\' referenceControlId=emailaddress2>Confirm email address exceeds the maximum length of 100 characters. </a>";
+MaximumLengthValidatoremailaddress2.evaluationfunction = "CustomValidatorEvaluateIsValid";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('ValidationSummaryEntityFormView');
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('RequiredFieldValidatorfirstname').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidatorfirstname'));
+}
+
+document.getElementById('RegularExpressionValidatorfirstname').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidatorfirstname'));
+}
+
+document.getElementById('MaximumLengthValidatorfirstname').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MaximumLengthValidatorfirstname'));
+}
+
+document.getElementById('RegularExpressionValidatormiddlename').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidatormiddlename'));
+}
+
+document.getElementById('MaximumLengthValidatormiddlename').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MaximumLengthValidatormiddlename'));
+}
+
+document.getElementById('RequiredFieldValidatorlastname').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidatorlastname'));
+}
+
+document.getElementById('RegularExpressionValidatorlastname').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidatorlastname'));
+}
+
+document.getElementById('MaximumLengthValidatorlastname').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MaximumLengthValidatorlastname'));
+}
+
+document.getElementById('RequiredFieldValidatormsemr_monthofbirth').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidatormsemr_monthofbirth'));
+}
+
+document.getElementById('RequiredFieldValidatormsemr_dayofbirth').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidatormsemr_dayofbirth'));
+}
+
+document.getElementById('IntegerValidatormsemr_year').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('IntegerValidatormsemr_year'));
+}
+
+document.getElementById('RangeValidatormsemr_year').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RangeValidatormsemr_year'));
+}
+
+document.getElementById('RequiredFieldValidatormsemr_year').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidatormsemr_year'));
+}
+
+document.getElementById('RegularExpressionValidatormsemr_year').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidatormsemr_year'));
+}
+
+document.getElementById('EmailFormatValidatoremailaddress1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('EmailFormatValidatoremailaddress1'));
+}
+
+document.getElementById('RequiredFieldValidatoremailaddress1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidatoremailaddress1'));
+}
+
+document.getElementById('RegularExpressionValidatoremailaddress1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidatoremailaddress1'));
+}
+
+document.getElementById('MaximumLengthValidatoremailaddress1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MaximumLengthValidatoremailaddress1'));
+}
+
+document.getElementById('EmailFormatValidatoremailaddress2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('EmailFormatValidatoremailaddress2'));
+}
+
+document.getElementById('RequiredFieldValidatoremailaddress2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidatoremailaddress2'));
+}
+
+document.getElementById('RegularExpressionValidatoremailaddress2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RegularExpressionValidatoremailaddress2'));
+}
+
+document.getElementById('MaximumLengthValidatoremailaddress2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MaximumLengthValidatoremailaddress2'));
+}
+//]]>
+</script>
+</form>
+
+
+	<script src="/js/pcf/loadPcfControls.js"></script>
+
+	
+		
+
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	<script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/postpreform.bundle-f4f91a6eb4.js" type="text/javascript"></script>
+
+	<script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/app.bundle-a91ffc8e89.js" type="text/javascript"></script>
+
+	<script src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/js/default-1033.bundle-eda4e638fd.js" type="text/javascript"></script>
+
+	
+	
+	
+	<script>
+		//this event will update the title of the page based on active breadcrumb
+		$('.breadcrumb').ready(function () {
+			if ($('.breadcrumb').is(':visible')) {
+				document.querySelector('title').innerHTML = ($('.breadcrumb > li.active').text() + "&nbsp;· Vaccination registration and booking portal");
+			}
+		});
+
+		function GoToNewEditor() {
+			var editCmsUrlSegment = "EditInCms";
+			var currentUrl = window.location.href;
+			if (currentUrl.indexOf('?') > -1) {
+				var urlSegments = currentUrl.split("?");
+				window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname + '?' + urlSegments[1];
+			}
+			else {
+				window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname;
+			}
+		}
+	</script>
+	
+		
+	
+	
+		
+			<script>
+				if ('serviceWorker' in navigator) {
+					navigator.serviceWorker.getRegistrations().then(function(registrations) {
+					for(let registration of registrations) {
+						registration.unregister();
+					}}).catch(function(err) {
+					console.log('Service Worker unregister action failed: ', err);
+					});
+				}
+			</script>
+		
+	
+		
+</body>
+</html>
+<!-- Generated at 9/11/2022 10:54:24 AM -->
+<!-- Page OK -->

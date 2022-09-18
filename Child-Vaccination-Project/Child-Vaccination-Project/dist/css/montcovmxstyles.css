@@ -1,0 +1,1371 @@
+/* Generic */
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('/segoeui.ttf') format('ttf');
+  }
+  
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-top: 0;
+    margin: 0;
+    height: 100%;
+    background-image: url('/VMBackgroundDesktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  a:focus {
+    outline: none;
+  }
+  
+  .btn {
+    border-radius: 2px;
+    min-height: 36px;
+    text-decoration: none;
+  }
+  
+  .form-control {
+    height: 36px;
+  }
+  
+  .banner {
+    background-color: #006cbe;
+    height: 48px;
+  }
+  
+  .banner h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 12px 0;
+  }
+  
+  .crmEntityFormView,
+  .entitylist {
+    border: none;
+  }
+  
+  .vaccination-mgmt-container {
+    background: #ffffff;
+    box-shadow: 0px 4.8px 14.4px rgb(0 0 0 / 18%),
+      0px 25.6px 57.6px rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 100px;
+  }
+  
+  .alert p {
+    font-size: 14px;
+  }
+  
+  /* Home */
+  
+  #vaccination-home {
+    margin-top: 50px;
+  }
+  
+  #vaccination-home #hero-image-desktop {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  
+  #vaccination-home #hero-image-mobile {
+    margin-bottom: -30%;
+    max-width: 100%;
+  }
+  
+  #vaccination-home h1 {
+    font-size: 1.2vw;
+    line-height: 40px;
+    color: #005a9e;
+    font-weight: bold;
+  }
+  
+  #vaccination-home #content-box {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.1),
+      0px 6.4px 14.4px rgba(0, 0, 0, 0.13);
+    border-radius: 2px;
+    padding: 0px 32px 32px 32px;
+  }
+  
+  #vaccination-home .btn-home {
+    width: 100%;
+    background: #ffc804;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    border-color: #ffc804;
+    height: 62px;
+    padding-top: 16px;
+    margin-top: 32px;
+  }
+  
+  #vaccination-home #content-box p {
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #323130;
+  }
+  
+  #vaccination-home #view-registration {
+    margin-top: 10px;
+    font-family: Segoe UI;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  
+  /* Appointment Web Form */
+  
+  .nav-tabs {
+    border-bottom: none;
+    background: #faf9f8;
+  }
+  
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus {
+    color: #323130;
+    background-color: #fff;
+    cursor: default;
+    border-bottom: solid 3px #145b9d;
+    outline-style: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  
+  .navigation-anchorlinks {
+    color: #323130;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+  
+  .bootstrap-datetimepicker-widget table td.day {
+    font-weight: 700;
+  }
+  .bootstrap-datetimepicker-widget table td.disabled {
+    text-decoration: line-through;
+    color: #999;
+    font-weight: 400;
+  }
+  
+  .error-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #a80000;
+    font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: none;
+  }
+  
+  .error-border {
+    border-color: #a80000;
+  }
+  
+  .row-grid {
+    margin-bottom: 15px;
+  }
+  
+  .row-grid-label {
+    margin-top: 15px;
+  }
+  
+  #vaccination-appt-form {
+    background: #ffffff;
+    box-shadow: 0px 4.8px 14.4px rgb(0 0 0 / 18%),
+      0px 25.6px 57.6px rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    padding: 0;
+    margin: 20px auto;
+  }
+  
+  #vaccination-appt-form .btn {
+    border-radius: 2px;
+  }
+  
+  #vaccination-appt-form .crmEntityFormView .actions {
+    padding: 19px 0;
+    border-top: 3px solid #00a1f1;
+  }
+  
+  #vaccination-appt-form #FacilitiesMap {
+    min-height: 80vh;
+  }
+  
+  #vaccination-appt-form #locationCards .cardsItem {
+    background: #ffffff;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1),
+      0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+    border-radius: 2px;
+    padding: 10px 16px 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  
+  #vaccination-appt-form #locationCards .cardsItem:hover {
+    background: #fafafa;
+  }
+  
+  #vaccination-appt-form #locationCards .cardHeader {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #323130;
+  }
+  
+  #vaccination-appt-form #locationCards .cardSlotcount {
+    font-size: 14px;
+    line-height: 20px;
+    color: #145b9d;
+    margin-bottom: 8px;
+  }
+  
+  #vaccination-appt-form #locationCards .cardLocation,
+  #vaccination-appt-form #locationCards .cardVaccines {
+    font-size: 14px;
+    line-height: 20px;
+    color: #605e5c;
+    margin-bottom: 8px;
+  }
+  
+  #vaccination-appt-form #locationCards .cardLocation img,
+  #vaccination-appt-form #locationCards .cardVaccines img {
+    margin-bottom: 4px;
+  }
+  
+  #vaccination-appt-form #locationCards .cardVaccines {
+    margin-bottom: 16px;
+  }
+  
+  #vaccination-appt-form #date-filter,
+  #vaccination-appt-form #zip-filter {
+    padding: 12px 0;
+  }
+  
+  #vaccination-appt-form #date-filter label,
+  #vaccination-appt-form #zip-filter label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+    font-weight: 600;
+  }
+  
+  #vaccination-appt-form #date-filter button,
+  #vaccination-appt-form #zip-filter button {
+    padding: 0px 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  #vaccination-appt-form #appt-options {
+    padding: 12px 0;
+  }
+  
+  #vaccination-appt-form #appt-options .appt-location {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  
+  #vaccination-appt-form #appt-options .appt-location .location-name {
+    font-weight: 600;
+  }
+  
+  #vaccination-appt-form #appt-options .slotday-header .slotdate {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #323130;
+    margin: 8px 0 3px;
+  }
+  
+  #vaccination-appt-form #appt-options .slotday-header .slottimezone {
+    font-size: 14px;
+    line-height: 20px;
+    color: #605e5c;
+    margin-bottom: 8px;
+  }
+  
+  #vaccination-appt-form #appt-options .btn-slot {
+    background: #ffffff;
+    border: 1px solid #8a8886;
+    margin: 8px 8px 8px 0px;
+    width: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+  }
+  
+  #vaccination-appt-form #appt-options .no-results {
+    background: #fff4ce;
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+    padding: 8px 16px;
+  }
+  
+  #vaccination-appt-form #appt-options .btn-slot:hover {
+    background: #f3f2f1;
+  }
+  
+  #vaccination-appt-form #appt-options .btn-slot:focus {
+    outline: 2px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  
+  #vaccination-appt-form #appt-options .btn-slot.btn-primary {
+    background: #0078d4;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+  
+  #vaccination-appt-form .crmEntityFormView,
+  #vaccination-appt-form .crmEntityFormView .actions {
+    border: none;
+  }
+  
+  #vaccination-appt-form .entity-form {
+    display: none;
+  }
+  #vaccination-appt-form .btn-hidden {
+    display: none;
+  }
+  
+  #vaccination-appt-form .mapPanel {
+    padding: 0px 0px 0px 0px;
+  }
+  
+  #vaccination-appt-form .container-fluid > .row .btn {
+    height: 35px;
+  }
+  
+  /* Appointment Confirmed */
+  
+  #vaccination-appt-confirmed #InstructionsMainText {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+    font-weight: 600;
+  }
+  #vaccination-appt-confirmed #InstructionsSubText p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #605e5c;
+  }
+  
+  #vaccination-appt-confirmed {
+    background: #ffffff;
+    box-shadow: 0px 4.8px 14.4px rgb(0 0 0 / 18%),
+      0px 25.6px 57.6px rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    padding: 10px 16px;
+    margin: 20px 0;
+  }
+  
+  #vaccination-appt-confirmed hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  #vaccination-appt-confirmed .confirmed-header h1 {
+    font-size: 22px;
+    line-height: 32px;
+    color: #323130;
+    font-weight: 400;
+  }
+  
+  .confirmed-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  #vaccination-appt-confirmed .confirmed-header span {
+    color: #ffffff;
+    background-color: #00ad56;
+    border-radius: 50%;
+    font-family: Fabric MDL2 Assets;
+    font-size: 28px;
+    line-height: 32px;
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    margin-right: 5px;
+  }
+  
+  #vaccination-appt-confirmed .confirmed-form-item {
+    margin-bottom: 16px;
+  }
+  
+  #vaccination-appt-confirmed .confirmed-form-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+    font-weight: 500;
+  }
+  
+  #vaccination-appt-confirmed .confirmed-form-label img {
+    margin-bottom: 4px;
+  }
+  
+  #vaccination-appt-confirmed .confirmed-form-text {
+    font-size: 12px;
+    line-height: 20px;
+    color: #605e5c;
+    font-weight: 600;
+  }
+  
+  #vaccination-appt-confirmed .confirmed-form-description {
+    font-size: 12px;
+    line-height: 16px;
+    color: #605e5c;
+  }
+  
+  #vaccination-appt-confirmed #QRCode {
+    text-align: center;
+  }
+  
+  #vaccination-appt-confirmed #QRCode img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  /* Appointment Manage */
+  
+  #vaccination-appt-manage {
+    background: #ffffff;
+    box-shadow: 0px 4.8px 14.4px rgb(0 0 0 / 18%),
+      0px 25.6px 57.6px rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    padding: 10px 16px 31px;
+    margin: 20px 0;
+  }
+  
+  #vaccination-appt-manage hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  #vaccination-appt-manage .confirmed-header h2 {
+    font-size: 22px;
+    line-height: 32px;
+    color: #323130;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  
+  #vaccination-appt-manage .confirmed-header span {
+    color: #ffffff;
+    background-color: #00ad56;
+    border-radius: 50%;
+    font-family: Fabric MDL2 Assets;
+    font-size: 28px;
+    line-height: 32px;
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+  }
+  
+  #vaccination-appt-manage .confirmed-form-item {
+    margin-bottom: 16px;
+  }
+  
+  #vaccination-appt-manage .confirmed-form-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+    font-weight: 600;
+  }
+  
+  #vaccination-appt-manage .confirmed-form-label img {
+    margin-bottom: 4px;
+  }
+  
+  #vaccination-appt-manage .confirmed-form-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+  }
+  
+  #vaccination-appt-manage .confirmed-form-description {
+    font-size: 12px;
+    line-height: 16px;
+    color: #605e5c;
+  }
+  
+  #vaccination-appt-manage .action-item {
+    text-align: center;
+  }
+  
+  #vaccination-appt-manage .form-custom-actions {
+    margin: 16px 0 0;
+  }
+  
+  #vaccination-appt-manage .form-custom-actions .col-sm-6 {
+    width: 100% !important;
+    text-align: center;
+  }
+  
+  #vaccination-appt-manage .form-action-container-left {
+    float: initial !important;
+  }
+  
+  #vaccination-appt-manage .crmEntityFormView {
+    border: none;
+  }
+  
+  #vaccination-appt-manage .entity-form {
+    display: none;
+  }
+  
+  #vaccination-appt-manage .modal-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #323130;
+    font-weight: 600;
+  }
+  
+  #vaccination-appt-manage .btn-cancel,
+  #vaccination-appt-manage .btn-cancel-reschedule {
+    display: block;
+    margin: 0 auto 16px;
+    width: 100%;
+    border: 1px solid #8a8886;
+    color: #323130;
+  }
+  
+  #vaccination-appt-manage .btn {
+    border-radius: 2px;
+  }
+  
+  #vaccination-appt-manage .btn-hidden {
+    display: none;
+  }
+  
+  /* Appointment Not Valid */
+  
+  #vaccination-appt-notvalid {
+    background: #ffffff;
+    box-shadow: 0px 4.8px 14.4px rgb(0 0 0 / 18%),
+      0px 25.6px 57.6px rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    padding: 10px 16px;
+    margin: 20px 0;
+  }
+  
+  #vaccination-appt-notvalid hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  #vaccination-appt-notvalid h1 {
+    font-size: 22px;
+    line-height: 32px;
+    color: #323130;
+    font-weight: 400;
+  }
+  
+  /* registration */
+  
+  #vaccination-registration-form {
+    background: #ffffff;
+    box-shadow: 0px 4.8px 14.4px rgb(0 0 0 / 18%),
+      0px 25.6px 57.6px rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    padding: 0;
+    margin: 20px auto;
+    margin-bottom: 100px;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView {
+    margin: 20px 40px;
+    border: none;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView .tab-column {
+    padding: 0;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView h2.section-title,
+  #vaccination-registration-form .crmEntityFormView h2.tab-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 66px;
+    color: #0078d4;
+    margin-bottom: 22px;
+    border: none;
+    margin-top: 0;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView .cell {
+    padding: 0 0 20px;
+    color: #323130;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView .info {
+    margin-bottom: 14px;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView label {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView div.description {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 14px;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    .cell.boolean-radio-cell
+    input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    margin: 2px 8px 5px 10px;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    .cell.boolean-radio-cell
+    input[type='radio']:first-child {
+    margin-left: 0;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView fieldset > .actions {
+    border-top: 1px solid #d2d0ce;
+    margin-bottom: 0;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView .actions .col-sm-6 {
+    padding: 0;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView .control-info-message {
+    padding-left: 5px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #797775;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView .control-display-message {
+    margin-top: 14px;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView .required-text-info p {
+    font-size: 14px;
+  }
+  
+  #vaccination-registration-form .crmEntityFormView .required-text-info p > span {
+    color: #ff0000;
+  }
+  
+  #vaccination-registration-form span.error,
+  #vaccination-registration-form .description.error-day,
+  #vaccination-registration-form .description.error-month,
+  #vaccination-registration-form .description.error-year {
+    color: #a80000;
+  }
+  
+  #vaccination-registration-form input.error,
+  #vaccination-registration-form select.error {
+    border-color: #a80000;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    [data-name='tab_PersonalInformation']
+    fieldset
+    legend.section-title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #323130;
+    border-bottom: 1px solid #d2d0ce;
+    font-weight: 400;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    [data-name='tab_PersonalInformation']
+    .cell {
+    padding: 0 28px 20px 0;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    [data-name='tab_HealthInsurance']
+    .cell {
+    padding: 0 28px 20px 0;
+  }
+  #vaccination-registration-form
+    .crmEntityFormView
+    [data-name='tab_PersonalInformation']
+    label {
+    font-size: 16px;
+  }
+  
+  /* multi select styles */
+  
+  #vaccination-registration-form #msemr_specialassistanceportal {
+    display: none;
+  }
+  
+  #vaccination-registration-form #msemr_specialassistanceportal_label {
+    display: none;
+  }
+  
+  #vaccination-registration-form #msemr_specialassistance legend {
+    border: none;
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+  
+  #vaccination-registration-form [data-name='section_SpecialAssistance'] .info,
+  #vaccination-registration-form
+    [data-name='section_SpecialAssistance']
+    .validators {
+    display: none;
+  }
+  
+  .alert-danger {
+    border-color: #f1dbde;
+    background-color: #f1dbde;
+  }
+  
+  /* vaccination confirmation styles */
+  
+  #vaccination-registration-confirmation .row {
+    border-bottom: 1px solid #d2d0ce;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #vaccination-registration-confirmation label {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #605e5c;
+  }
+  
+  #vaccination-registration-confirmation .labelvalues {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    overflow: hidden;
+  }
+  
+  #vaccination-registration-confirmation h4 {
+    margin-top: 60px;
+  }
+  
+  #vaccination-registration-form [data-name='tab_Confirmation'] fieldset {
+    margin: 60px 0 20px;
+  }
+  
+  #vaccination-registration-form #msemr_digitallysignthisdocumentandverify {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #vaccination-registration-form #msemr_digitallysignthisdocumentandverify_label {
+    margin-left: 16px;
+  }
+  
+  #vaccination-registration-form div[data-name='tab_GeneralChallenge'] {
+    display: none;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    div[data-name='tab_Challenge']
+    .actions {
+    border-top: 1px solid #d2d0ce;
+    margin-top: 40px;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    div[data-name='tab_Challenge']
+    .cell {
+    padding: 0;
+    padding-left: 18px !important;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    div[data-name='tab_Challenge']
+    tr
+    td.cell:first-child {
+    padding: 0 !important;
+  }
+  
+  #vaccination-registration-form div[data-name='tab_Challenge'] .text-danger {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+  }
+  
+  #vaccination-registration-form
+    div[data-name='tab_Challenge']
+    legend.section-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #323130;
+    margin-bottom: 16px;
+  }
+  
+  #vaccination-registration-form div[data-name='tab_Challenge'] .error-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: #a80000;
+  }
+  
+  #vaccination-registration-form
+    .crmEntityFormView
+    div[data-name='tab_Challenge']
+    fieldset {
+    margin-bottom: 9px;
+  }
+  
+  /* session challenge */
+  
+  #vaccination-session-challenge {
+    background: #ffffff;
+    box-shadow: 0px 4.8px 14.4px rgb(0 0 0 / 18%),
+      0px 25.6px 57.6px rgb(0 0 0 / 22%);
+    border-radius: 2px;
+    padding: 10px 16px;
+    margin: 20px 0;
+  }
+  
+  #vaccination-session-challenge div[data-name='tab_GeneralChallenge'] {
+    display: none;
+  }
+  
+  #vaccination-session-challenge div[data-name='tab_Challenge'] tr {
+    display: none;
+  }
+  
+  #vaccination-session-challenge div[data-name='tab_Challenge'] tr:first-child {
+    display: table-row;
+  }
+  
+  #vaccination-session-challenge .crmEntityFormView {
+    border: none;
+  }
+  
+  #vaccination-session-challenge .crmEntityFormView .actions {
+    border-top: 1px solid #d2d0ce;
+    margin-top: 40px;
+  }
+  
+  #vaccination-session-challenge .crmEntityFormView .cell {
+    padding: 0 9px 20px;
+  }
+  
+  #vaccination-session-challenge .text-danger {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+  }
+  
+  #vaccination-session-challenge legend.section-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #323130;
+    margin-bottom: 16px;
+  }
+  
+  #vaccination-session-challenge .error-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: #a80000;
+  }
+  
+  /* Email Opt In  */
+  #vaccinationNotification {
+    padding-top: 2.5%;
+  }
+  #vaccinationNotification #containerRow {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.1),
+      0px 6.4px 14.4px rgba(0, 0, 0, 0.13);
+    border-radius: 2px;
+    padding: 10px 32px 32px 32px;
+  }
+  #vaccinationNotification p {
+    color: #323130;
+    line-height: 28px;
+    font-size: 20px;
+    padding: 2.5%;
+  }
+  #toHide {
+    display: none;
+  }
+  #vaccinationNotification .vaccinationNotificationButton {
+    margin-top: 2%;
+  }
+  #vaccinationNotification .vaccinationNotificationButtonAction {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 7%;
+    width: -webkit-fill-available;
+  }
+  #vaccinationNotification .vaccinationNotificationHyperlink {
+    padding-bottom: 8%;
+  }
+  
+  /* Email Opt In Confirmation Page  */
+  #vaccinationNotificationSubscriptionUpdate {
+    padding-top: 2.5%;
+  }
+  #vaccinationNotificationSubscriptionUpdate #containerRow {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.1),
+      0px 6.4px 14.4px rgba(0, 0, 0, 0.13);
+    border-radius: 2px;
+    padding: 10px 32px 32px 32px;
+  }
+  #vaccinationNotificationSubscriptionUpdate p {
+    color: #323130;
+    line-height: 28px;
+    font-size: 20px;
+    padding: 2.5%;
+  }
+  #vaccinationNotificationSubscriptionUpdate .toHide {
+    display: none;
+  }
+  #vaccinationNotificationSubscriptionUpdate #toHide {
+    display: none;
+  }
+  #vaccinationNotificationSubscriptionUpdate #finalRow {
+    padding-bottom: 30%;
+  }
+  
+  /* Sucess Profile */
+  
+  #vaccination-success {
+    margin-top: 50px;
+  }
+  
+  #vaccination-success h1 {
+    color: #0078d4;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 24px;
+    line-height: 66px;
+  }
+  
+  #vaccination-success h2 {
+    color: #0078d4;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: lighter;
+  }
+  
+  #vaccination-success #content-box p {
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #323130;
+  }
+  
+  #vaccination-success #hero-image-desktop {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  
+  #vaccination-success #hero-image-mobile {
+    margin-bottom: -30%;
+    max-width: 100%;
+  }
+  
+  #vaccination-success #content-box {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    box-shadow: 0px 1.2px 3.6px rgba(0, 0, 0, 0.1),
+      0px 6.4px 14.4px rgba(0, 0, 0, 0.13);
+    border-radius: 2px;
+    padding: 0px 32px 32px 32px;
+  }
+  
+  #vaccination-success .btn-home {
+    background: #ffc804;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    border-color: #ffc804;
+    height: 62px;
+    padding-top: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 35%;
+  }
+  
+  #vaccination-success #content-box p {
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #323130;
+  }
+  
+  #vaccination-success .horizontal-line {
+    border-top: 1px solid #d2d0ce;
+    margin-bottom: 20px;
+  }
+  
+  #vaccination-success .action-line {
+    border-top: 1px solid #d2d0ce;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  #vaccination-success .sub-headings {
+    font-size: 18px;
+    line-height: 24px;
+    color: #323130;
+    margin-top: 50px;
+  }
+  
+  #vaccination-success .validation-summary {
+    margin-top: 20px;
+    display: none;
+  }
+  
+  #vaccination-success #btnNext.btn-primary {
+    margin-left: 5px;
+  }
+  
+  #vaccination-success #find-registration-div {
+    border-top: 1px solid #d2d0ce;
+    margin-top: 30px;
+  }
+  
+  #vaccination-success .btn-group {
+    margin-top: 20px;
+  }
+  
+  /* Resident View */
+  
+  #VaccinationRecommendations thead {
+    display: none;
+  }
+  
+  .btn-residentprofile {
+    border: 1px solid #8a8886;
+    color: #323130;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #VaccinationRecommendations .cardBase {
+    /* Surfaces/Surface */
+    background: #ffffff;
+    /* Elevation / Depth4 */
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1),
+      0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+    border-radius: 2px;
+    margin-bottom: 1.5%;
+  }
+  
+  #VaccinationRecommendations .card .nonHeaderLine {
+    font-family: Segoe UI;
+    font-size: 14px;
+    line-height: 143%;
+  }
+  
+  #VaccinationRecommendations .card .headerLine {
+    /* Type/Subtitle 1 */
+    font-family: Segoe UI;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+    display: flex;
+    align-items: flex-end;
+    /* Typography/Primary */
+    color: #323130;
+  }
+  
+  #VaccinationRecommendations .baseResidentPage {
+    background: #faf9f8;
+  }
+  
+  div.baseResidentPage a.editLink {
+    padding: 6px 20px;
+    background: #ffffff;
+    border: 1px solid #8a8886;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 143%;
+    color: #323130;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  #Tab1 fieldset[aria-label='Information'] div.info {
+    flex: 50%;
+  }
+  #Tab1 fieldset[aria-label='Information'] div.control {
+    flex: 50%;
+  }
+  #Tab1 table.table td {
+    display: flex;
+    border: none;
+  }
+  
+  #Tab1 table.table td.location:before {
+    content: '';
+    width: 20px;
+    background-repeat: no-repeat;
+    background-image: url('/locationpin64.svg');
+  }
+  
+  #Tab1 .tab-column fieldset[aria-label='Information'] td {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  #Tab1 table.table td.syringe:before {
+    content: '';
+    background-repeat: no-repeat;
+    width: 20px;
+    background-image: url('/needle64.svg');
+  }
+  
+  #Tab1 table.table td.calendar:before {
+    content: '';
+    background-repeat: no-repeat;
+    width: 20px;
+    background-image: url('/calendar64.svg');
+  }
+  
+  #Tab1 table.table td.actionmenucards {
+    display: table-cell;
+  }
+  
+  #Tab1 table.table td.actionmenucards ul.dropdown-menu {
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    position: none;
+  }
+  
+  #Tab1 table.table td.scheduleAppt {
+    justify-content: center;
+  }
+  
+  #Tab1 table.table td.scheduleAppt a {
+    margin-bottom: 15px;
+  }
+  
+  #Tab1 .actionmenucards .dropdown.action button {
+    display: none;
+  }
+  
+  #Tab1 .actionmenucards .dropdown.action .dropdown-menu {
+    display: contents;
+    position: relative;
+    text-align: center;
+  }
+  
+  #Tab1 .btn-triggerworkflow {
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #8a8886;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 6px 20px;
+    margin-top: 15px;
+  }
+  
+  #Tab2 .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0 20px 15px;
+  }
+  
+  #Tab2 .boolean-dropdown-cell {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  #Tab2 .form-control-cell {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  #Tab2 .crmEntityFormView .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0 20px 15px;
+  }
+  #resident .crmEntityFormView .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0 20px 15px;
+  }
+  
+  #Tab2 .crmEntityFormView td.cell {
+    display: inline-flex !important;
+    width: 100%;
+  }
+  
+  #Tab2 .info {
+    width: 90%;
+    max-width: 600px;
+  }
+  #Tab2 .control {
+    margin: -8px 0 0 20px;
+    width: 40%;
+  }
+  #resident .crmEntityFormView .cell.checkbox-cell div.info {
+    padding-left: 0px;
+  }
+  #resident .crmEntityFormView .cell.checkbox-cell:first-child {
+    padding: 0 28px 20px;
+  }
+  
+  /* Resident Search */
+  
+  #residentSearch .spanTitle {
+    font-family: Segoe UI;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000000;
+  }
+  /* Search - if need to hide more columns on the end, update the 3 below. */
+  #residentSearch table thead tr th:nth-last-child(-n + 3) {
+    display: none;
+  }
+  #residentSearch table tbody tr td:nth-last-child(-n + 3) {
+    display: none;
+  }
+  
+  .createNewResidentPlusButton {
+    font-size: 16px;
+    line-height: 100%;
+    color: #323130;
+    flex: none;
+    margin: 10px 0px;
+  }
+  .createNewResidentText {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323130;
+    margin: 0px 4px;
+  }
+  .NoResultsFirstLine {
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: #323130;
+  }
+  .NoResultsSecondLine {
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: #605e5c;
+    margin-top: 20px;
+  }
+  /* Create Resident Webform */
+  .createResidentCallCenter .radio-div {
+    height: 40px;
+    width: 50%;
+    max-width: 400px;
+    padding: 8px;
+  }
+  
+  .createResidentCallCenter .radio-div-checked {
+    background: #ffffff;
+    border: 1px solid #0078d4;
+    box-sizing: border-box;
+  }
+  
+  /* Edit Entity Forms */
+  
+  #editresidentinfo .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0 20px 15px;
+  }
+  
+  #editresidentinfo .boolean-dropdown-cell {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  #editresidentinfo .form-control-cell {
+    /*display: flex;*/
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  #editresidentinfo .crmEntityFormView .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0 20px 15px;
+  }
+  #resident .crmEntityFormView .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0 20px 15px;
+  }
+  
+  #editresidentinfo .crmEntityFormView td.cell {
+    /*display: inline-flex !important;*/
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  #editresidentinfo .info {
+    width: 90%;
+    max-width: 600px;
+  }
+  #editresidentinfo .crmEntityFormView .cell.checkbox-cell div.info {
+    padding-left: 0px;
+  }
+  #editresidentinfo .crmEntityFormView .cell.checkbox-cell:first-child {
+    padding: 0 28px 20px;
+  }
+  #editresidentinfo div.actions input {
+    margin-left: 20px;
+  }
+  #editresidentinfo div.actions a {
+    margin-right: 20px;
+  }
+  

@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/w3.css">
+<body>
+
+<!-- Navigation -->
+<div class="topnav" id="myTopnav" style="height: 100px;">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    
+  </label>
+  
+  <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Child.html#" style="margin-left:750px ;">Home</a>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/About.html#" >About</a>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Contact.html#" >Contact</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/health_education.html#">Health Education</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Immunization_dashboard.html#">Immunization Dashboard</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/SMS_Alert.html#">SMS Alert</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Vaccine_Schedule.html#">Vaccine Schedule</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Vaccine_Assessment_Tool.html#">Vaccine Assessment Tool</a>
+    </div>
+  </div>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/feedback.html#" >Feedback</a>
+  <h2 style="margin-top: 5px;margin-right: 500px;color: white;text-size-adjust: 30%;">Child Vaccination System</h2>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> 
+</div>
+
+
+	<title>Childhood Vaccine Quiz | CDC</title>
+			
+			
+     <br>                                                                                                                                                                                                                                                                                                                      
+     
+      <p style="margin-left:10px;">Answer 7 quick questions to learn which vaccines your child may need. Vaccines are recommended for children based on age, health conditions, and other factors.<br/> <b>This vaccine assessment tool applies to children.</b></p>
+<br>
+      <div class="card mb-3"><div class="card-body bg-gray-l3"><div class="card-title h4 mb text-left" style="color:#009999">Instructions:<hr></div> 
+
+
+<!--<p>1.&nbsp;&nbsp;<strong>Answer the questions below.</strong><br/>2.&nbsp;&nbsp;<strong>Get a list of vaccines</strong> your child may need based on your answers.<em> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(This list may include vaccines your child has already had)</em>.<br/>3.&nbsp;&nbsp;<strong>Discuss the vaccines on the list with your child's doctor or health care professional.</strong></p>-->
+
+ <ol>
+  <li><strong>Answer the questions below.</strong></li>
+  <li><strong>Get a list of vaccines</strong> your child may need based on your answers.<em> <br/>&nbsp;(This list may include vaccines your child has already had)</em></li>
+  <li><strong>Discuss the vaccines on the list with your child's doctor or health care professional.</strong></li>
+ </ol>
+</div>
+</div>
+	  <br>
+<form name="frmchildquiz" method="post" action="results.html" onsubmit="return checkRequired(this)">
+<p style="color:#009999; font-size:24px;margin-left:10px ;"><strong>Part One: About Your Child/Adolescent</strong></p>
+<br>
+<ol style="margin-left: 10px;">
+  <li><label for="Month" >Some vaccines are given based on your child's age. What is your child's birthday?</label><br/>
+ 
+  <select name="Month" id="Month" size="1" title="Month" >
+                <option value="0">Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+          </select>
+  <select name="Day" id="Day" size="1" title="Day">
+                <option value="0">Day</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+                <option value="06">6</option>
+                <option value="07">7</option>
+                <option value="08">8</option>
+                <option value="09">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+          </select>
+			    
+ <select name='Year' id='Year' size='1' title='Year' onChange='checkage()'>  <option value='0'>Year</option>  <option value='2003'>2003</option>  <option value='2004'>2004</option>  <option value='2005'>2005</option>  <option value='2006'>2006</option>  <option value='2007'>2007</option>  <option value='2008'>2008</option>  <option value='2009'>2009</option>  <option value='2010'>2010</option>  <option value='2011'>2011</option>  <option value='2012'>2012</option>  <option value='2013'>2013</option>  <option value='2014'>2014</option>  <option value='2015'>2015</option>  <option value='2016'>2016</option>  <option value='2017'>2017</option>  <option value='2018'>2018</option>  <option value='2019'>2019</option>  <option value='2020'>2020</option>  <option value='2021'>2021</option>  <option value='2022'>2022</option></select> 
+ </li>
+
+ 
+   <li> Is your child<br />
+  <label for="sex_f"><input type="radio" name="sex" value="female" id="sex_f" /> Female</label><br/>
+  <label for="sex_m"><input type="radio" name="sex" value="male" id="sex_m" /> Male</label></li>
+   </ol> 
+   <br>
+<p style="color:#009999;font-size:24px;margin-left: 10px;"><strong>Part Two: High-Risk Conditions or Medical Conditions</strong></p>
+<br> 
+<ol style="margin-left: 10px;">
+  <li>Will your child be traveling outside the U.S. in the near future?<br />
+  <label for="rtravel_y"><input type="radio" name="rtravel" value="True" id="rtravel_y"/> Yes</label><br/>
+   <label for="rtravel_n"><input type="radio" name="rtravel" value="False" id="rtravel_n"/> No</label><br/>
+	 <label for="rtravel_dk"><input type="radio" name="rtravel" value="DK" id="rtravel_dk"/> Don't know</label></li>
+	  
+   <li>Does your child have a weakened immune system due to illness or medications?<br/>
+  <label for="rweakimmune_y"><input type="radio" name="rweakimmune" value="True" id="rweakimmune_y"/> Yes</label><br/>
+  <label for="rweakimmune_n"><input type="radio" name="rweakimmune" value="False" id="rweakimmune_n"/> No</label></li></ol>
+
+ 
+   
+ <ol style="margin-left: 10px;"> 
+ <li value="3">Some of the medical conditions listed below can put you at higher risk of certain infections, or the infections pose a higher risk of complications if the condition is present. Does your child have any of these medical conditions? Check all that apply.<br/>
+    <label for="chkheartdisease"> <input type="checkbox" name="chkheartdisease" value="True" id="chkheartdisease"/>&nbsp;Heart disease</label><br/>
+     <input type="checkbox" name="chkdiabetes" value="True" id="chkdiabetes"/> <label for="chkdiabetes">&nbsp;Diabetes, type 1 or 2 (also called "sugar diabetes")</label><br/>
+    <label for="chkchroniclung"> <input type="checkbox" name="chkchroniclung" value="True" id="chkchroniclung"/> &nbsp;Chronic lung disease (including asthma if treated with high-dose oral steroids)</label><br/>
+   <label for="chkkidneyrenaldialysis">  <input type="checkbox" name="chkkidneyrenaldialysis" value="True" id="chkkidneyrenaldialysis"/> &nbsp;Kidney failure, end-stage renal disease, or on dialysis</label><br/>
+    <label for="chkchronicliver"> <input type="checkbox" name="chkchronicliver" value="True" id="chkchronicliver"/> &nbsp;Chronic liver disease</label><br/>
+    <label for="chkspleen"> <input type="checkbox" name="chkspleen" value="True" id="chkspleen"/> &nbsp;Spleen has been damaged or removed</label><br/>
+    <label for="chksickle"> <input type="checkbox" name="chksickle" value="True" id="chksickle"/> &nbsp;Sickle cell disease or other blood disorder</label><br/>
+    <label for="chksoliriis"> <input type="checkbox" name="chksoliriis" value="True" id="chksoliriis"/> &nbsp;Complement component deficiency or taking complement inhibitors such as eculizumab (Soliris) and  ravulizuman (Ultomiris)</label><br/>	 
+	<label for="chkcancer"> <input type="checkbox" name="chkcancer" value="True" id="chkcancer"/> &nbsp;Cancer or cancer treatments</label><br/>
+    
+     <label for="chkHib"> <input type="checkbox" name="chkHib" value="True" id="chkHib"/> &nbsp;Bone marrow transplant</label><br/>
+      <label for="chkcerebrospinal"> <input type="checkbox" name="chkcerebrospinal" value="True" id="chkcerebrospinal"/> &nbsp;Cerebrospinal fluid leak</label><br/>
+       <label for="chkcochlear"> <input type="checkbox" name="chkcochlear" value="True" id="chkcochlear"/> &nbsp;Cochlear implant</label><br/>
+        <label for="chkhiv"> <input type="checkbox" name="chkhiv" value="True" id="chkhiv"/> &nbsp;HIV infection</label><br/>
+    
+  </li>
+ 
+
+  </ol>
+
+  
+ <br>
+  
+  <p style="color:#009999; font-size:24px;margin-left: 10px;"><strong>Part Three: Living Conditions</strong></p>
+  <br>
+  <ol style="margin-left: 10px;">
+  <li>Is there currently an outbreak of meningitis in your community?<br />
+  <label for="routbreak_y"><input type="radio" name="routbreak" value="True" id="routbreak_y"/> Yes</label><br/>
+   <label for="routbreak_n"><input type="radio" name="routbreak" value="False" id="routbreak_n"/> No</label><br/>
+   <label for="routbreak_dk"><input type="radio" name="routbreak" value="DK" id="routbreak_dk"/> Don't know</label></li>
+   
+  
+ <li>Is your child a first-year college student who lives in a dormitory or a new military recruit?<br />
+ <label for="rfreshman_y"> <input type="radio" name="rfreshman" value="True" id="rfreshman_y"/> Yes</label><br/>
+ <label for="rfreshman_n"> <input type="radio" name="rfreshman" value="False" id="rfreshman_n"/> No</label></li>
+	  
+  <li>Does your child live in a dengue endemic area including Puerto Rico, American Samoa, US Virgin Islands, Federated States of Micronesia, Republic of Marshall Islands, or the Republic of Palau??<br />
+ <label for="rdengue_y"> <input type="radio" name="rdengue" value="True" id="rdengue_y"/> Yes</label><br/>
+ <label for="rdengue_n"> <input type="radio" name="rdengue" value="False" id="rdengue_n"/> No</label></li>	  
+  </ol>
+  <p style="margin-left: 10px;"><strong>That's it! Just click "Results" to find out which vaccines your child may need.</strong></p>
+  <p style="text-align:center"><input type="submit" name="Submit" onclick="'file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/results.html#'" value="Results"/>
+ 
+  </p>
+  <br>
+      </form>
+	 
+
+      <!-- Footer -->
+
+<footer>
+    <div style="background-color:#0082e6;height: 200px;">
+    <a href="#"><i class="fa fa-facebook-official" style="margin-top:70px;margin-left:550px;"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <p style="margin-left:525px;margin-top: 30px;">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">iiui.css</a>
+    </p>
+  </div>
+  </footer>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  
+</body>
+</html>
+

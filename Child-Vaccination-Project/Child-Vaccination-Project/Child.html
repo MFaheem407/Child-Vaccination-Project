@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/w3.css">
+<body>
+
+<!-- Navigation -->
+<div class="topnav" id="myTopnav" style="height: 100px;">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    
+  </label>
+  
+  <a href="#home" class="active" style="margin-left:750px ;">Home</a>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/About.html#" >About</a>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Contact.html#" >Contact</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/health_education.html#">Health Education</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Immunization_dashboard.html#">Immunization Dashboard</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/SMS_Alert.html#">SMS Alert</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Vaccine_Schedule.html#">Vaccine Schedule</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Vaccine_Assessment_Tool.html#">Vaccine Assessment Tool</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/RegisterForVaccine.html#">Register for Vaccine</a>
+    </div>
+  </div>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/feedback.html#" >Feedback</a>
+  <h2 style="margin-top: 5px;margin-right: 500px;color: white;text-size-adjust: 30%;">Child Vaccination System</h2>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+ 
+</div>
+
+<!-- Slide Show -->
+<section style="margin-top: 10px;">
+  <img class="mySlides" src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/img/img_la.jpg" style="width:1247px;height:400px;">
+  <img class="mySlides" src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/img/img_chicago.jpg" style="width:1247px;height:400px;">
+  <img class="mySlides" src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/img/img_ny.jpg" style="width:1247px;height:400px;">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+<section class="w3-container w3-center" style="max-width:600px;margin-left: 470px;margin-top: 50px;">
+  <h2 class="w3-wide">Child Vaccination System</h2>
+  <p class="w3-opacity"><i style="margin-left: 25px;margin-top: 50px;">We Care for our future generation</i></p>
+</section>
+
+
+<section class="w3-container w3-content w3-center" style="max-width:600px;margin-left: 360px;margin-top: 30px;">
+<p>
+We have created a child vaccination website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+
+  <div class="row">
+    <div class="column">
+      <p style="margin-left: 320px;">Register</p>
+      <img src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/img/img_2.jpg" alt="Random Name" style="width:170px;height:170px;margin-left: 270px;">
+    </div>
+    <div class="column">
+      <p style="margin-left: 190px;">Schedule</p>
+    <img src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/img/img_1.jpg" alt="Random Name" style="width:170px;height:170px;margin-left: 150px;">
+  
+    </div>
+    <div class="column" style="float: right;">
+      <p style="margin-left: 55px;">Alerts</p>
+    <img src="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/img/img_3.jpg" alt="Random Name" style="width:170px;height:170px;margin-right: 250px;"> 
+    </div>
+  </div>
+
+
+<!-- Footer -->
+
+<footer>
+  <div style="background-color:#0082e6;height: 200px;">
+  <a href="#"><i class="fa fa-facebook-official" style="margin-top:70px;margin-left:550px;"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p style="margin-left:525px;margin-top: 30px;">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">iiui.css</a>
+  </p>
+</div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</body>
+</html>

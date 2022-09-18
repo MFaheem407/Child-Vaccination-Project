@@ -1,0 +1,1693 @@
+
+<!DOCTYPE html>
+<html lang="en-US" data-lang="en-US" crm-lang="en-US" dir="ltr" crm-lcid="1033"
+	same-site-mode="None">
+<head>
+		
+		<meta charset="utf-8" /><meta name="viewport" content="width=device-width,&#32;initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script type="text/javascript" >
+				
+		</script>
+	
+		
+		<script src="/_resources/getresourcemanager?lang=en-US"></script>
+	
+	<script type="text/javascript">
+		// Refresh all powerBI Iframes on Login in one Iframe
+		window.addEventListener('message', function (event) {
+			if (event && event.data && event.data == 'refreshPowerBI') {
+				$("iframe.powerbi").each(function () {
+					this.src = this.src;
+				});
+			}
+		});
+
+		// Fix for incorrect viewport width setting in IE 10 on Windows Phone 8.
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+			document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		}
+	</script>
+		
+	
+		
+		<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/bootstrap3.min.css" rel="stylesheet" />
+
+		<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/glyphicons-font-awesome-migrate.min.css" rel="stylesheet"/>
+
+		<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/preform.bundle-44b958182c.css" rel="stylesheet" />
+
+
+		
+		<!--[if lt IE 9]>
+				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		
+		<!--[if lt IE 10]>
+				<script src="~/js/formdata.js"></script>
+			<![endif]-->
+		
+			
+		
+		<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/theme.css" rel="stylesheet" />
+<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/bootstrap-multiselect.min.css" rel="stylesheet" />
+<link href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/montcovmxstyles.css" rel="stylesheet" />
+
+		
+		
+		
+		
+	
+		<link href="/css/offlinenotification.css" rel="stylesheet" /></head>
+<body data-sitemap-state="/registration/:/"
+	data-dateformat="M/d/yyyy"
+	data-timeformat="h:mm tt"
+	data-datetimeformat="M/d/yyyy h:mm tt"
+	data-app-path="/"
+	data-ckeditor-basepath="/js/BaseHtmlContentDesigner/Libs/msdyncrm_/libs/ckeditor/"
+	data-case-deflection-url="/_services/search/a1103dc5-a5fe-4d76-adc3-1c71c5661eb7">
+
+	<div id="offlineNotificationBar" style="display: none;">
+		<div id="web"></div>
+		<div id="message">You&#8217;re offline. This is a read only version of the page.</div>
+		<div id="close" onclick="this.parentElement.style.display='none';"></div>
+	</div>
+
+	
+	<script type="text/javascript">
+		window["Microsoft"] = window["Microsoft"] || {};
+		window["Microsoft"].Dynamic365 = {
+			Portal: {
+				
+				User: {
+					contactId: '',
+					userName: ''
+				},
+				
+				version: '9.4.8.62',
+				type: 'CDSStarterPortal',
+				id: '9116b10f-a322-4aea-ab31-6d8d6d4ecb36'
+			}
+		}
+	</script>
+
+	
+		
+
+
+
+<style>
+    .navbar-brand {
+        font-family: Segoe UI !important;
+        font-size: 28px !important;
+        line-height: 24px !important;
+        padding-top: 16px;
+        font-weight: 500 !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 banner">
+            <h1><div class="xrm-editable-html&#32;xrm-attribute"><div class="xrm-attribute-value">Registration</div></div></h1>
+        </div>
+    </div>
+</div>
+            <!--div class="visible-xs-block">
+              <div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English"><div class="xrm-attribute-value">
+
+
+    <a href="~/"><img src="/headerlogo.png" alt="Montgomery County PA" style="height:40px"><span style="position: relative; top: 2px; margin-left: 9px;">Montgomery County PA​</span></a>
+
+
+</div></div>
+            </div-->
+    
+            <!--<button type="button" class="navbar-toggle collapsed" title="Toggle navigation" data-toggle="collapse" data-target="#navbar" aria-expanded="false" onclick="setHeight();">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>-->
+        
+
+
+<script type="text/javascript">
+    window.onload = function () {
+        if (window.navigator.appName == "Microsoft Internet Explorer" || window.navigator.userAgent.indexOf("Trident") > 0) {
+            var searchElement = document.getElementById("search");
+            if (searchElement != null) searchElement.setAttribute("href", "");
+        }
+    };
+    function setHeight() {
+        var windowHeight = window.innerHeight - 140;
+        var navbar = document.getElementById("navbar");
+        if (navbar) {
+            navbar.style.maxHeight = windowHeight + "px";
+        }
+    }
+    window.addEventListener('resize', function (event) {
+        setHeight();
+    });
+</script>
+
+	<!-- add anti-forgery token-->
+	<div id="antiforgerytoken" data-url="/_layout/tokenhtml"></div>
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/preform.bundle-2c5735c41a.js" type="text/javascript"></script>
+
+	
+	<script src="/js/pcf/prop-types.js"></script><script src="/js/pcf/fela.js"></script><script src="/js/pcf/fela-dom.js"></script>
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/pcf.bundle-33229a14eb.js" type="text/javascript"></script>
+
+	<script src="/js/pcf/react-fela.js"></script><script src="/js/pcf/fluentui-react.js"></script>
+	
+	   <form method="post" action="/en-US/registration/" onsubmit="javascript:return WebForm_OnSubmit();" id="liquid_form">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['liquid_form'];
+if (!theForm) {
+    theForm = document.liquid_form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZPy7_VKdJAdrmEXkUgkbJutWuQ40Z9UT_766Xsw0RAyjUVfEx8oEuR4DD49KZHjBdA2&amp;t=637814653746327080" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1M3cYtbOYgt6ipWQuRWw8F5y0OlRnb68OuCvLkuiKRPVO3IWDDC_5E_9ZaAJsF7WpzJQiQRLuDv11Y2kUfgWvf3OkPDeW6YZ1OAuCWvvAaCW51IEeq-6jyG2upStdfuDAw2&amp;t=14d69f50" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvurdN7hcDhLmWQi5YiE-wWYOk_kAMf07xGT41Mg4s2lTpb6Hi4aJHvfMExkcIWdc3Ksi9uWhjrfvX0rh_VTIPqx1xWqYS6XfNjmLEdr2R0BwFiiir8h6c6ea-UvfLK2CMDYHVs9uSP6Um1GGV4-FRiU1&amp;t=49337fe8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OMvOhsyWU_8sRQdThwNDeTZgjbOh3xtpzL9b_YXPNbLnzA3NntxDeK5tlBHPwzkA6H0L1ZY1lpR7CTMgxgDYQj3lCS34x6gCuA5YzISJZwNoy-V4KzPrnVLXi_rISqNvZM5A_NdNWS4pweWEYHYZy2M1&amp;t=49337fe8" type="text/javascript"></script>
+<script src="../../js/jquery.blockUI.js" type="text/javascript"></script>
+<script src="/xrm-adx/js/webform.js" type="text/javascript"></script>
+<script src="/xrm-adx/js/radcaptcha.js" type="text/javascript"></script>
+<script src="/xrm-adx/js/crmentityformview.js" type="text/javascript"></script>
+<script src="/xrm-adx/js/crmentityformview-datetime.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1128FCF4" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="kWPimdr+xGb+LKPrnyt2VtSGxoY+BioxeS2xlM9Zaz5eu/3brGHNkMuigaAar50ucQh8mIQTv+IPXwLN2lZIK0ZjEyC1E9zakk4jV2aBocEW7qnHyA4zt5BQQXO36sYaPzmIbsRPvKjd1Cb5ShoZ+nS1oc5F4725qbWAWXgPcBq9LaO0yCoE5j3svwVy6d4MbumqOBP1Qk+anKTHOkd5lyc8q1ciPcL9K/trX9LCwcSRQx/W48/M98bgsleH8kJSAvNL6CMcbNdZ3RM/65AX42Ts1M9+uzzTVEIjeTb/kTN3FtKZI6BHmtKbPZeYgktAUWj2FWquSMy2V+azEJPRLVDaSIO4fC/Rlra7EGNgEPG+KeQBLz+M7vyZn29O0KrXRPhlkrBH+J0l1ZaHjwaFnBsEQEFEvsSoetbwbjX0lOLYYuAjlhOD4drPaHVP6MtntyXJ978KHArV6nWvTBD4wRkCe8rd5BK7CjuK6R4B/tKYzJqMzaCua6YqSvvvIxPG6YRb4qeWbLGlHX8X0jfbEAczsRZAETiVJFfHwTBEQU+grCTvyyPcUqJMSMz5QlnpItQUngcblC7GpoWOR4Ziayt6oFmz4dEpnIDxnodtt9GsBoe20d843kgRrnkVj6k3YIjAdViZTjUHUiUbfzuhgO+nojot4Q8C214HyGmd4vGZLhyB6xgIyydzC8zaPPJPBAZDyZESJlDpvze+BRLGzWwtIbNWXhzaOG9w2WwrnnYtLtYVuf5yN9bqCc09+Mwp6BUvWkfkyTHXawptzoJBzWIyd2p/WFGKcJWHTF/8AlWgJhxY4QAaXYAuQoO33J2x6odKeIR2MWVBVYT8oex0dNSxLgl6TgE3pLdxf4OGNwaneYGPXoVObXyfuADyYPuXbq8E7eMAhs5T7/yGn7eg7TvIduHH175zJq5pXWvNfd7I0r0bsqVaS9dUKyt6wrYERLQup8TwkJnW7Czkhqf6LQKzJoIN4J/k7rEXMlDvurczPijPc+WCQ9JFG9UM2xK8qsYh9FnlMECVuFo7AVsB2M4XKez0oji8XAXikvaf3eDtjerqWxcuTzMjrr0cT6642uZlTtycGT7CLInLtym7HGU1wqMrj1JEgBZKJFPHLb4RGuDOdT/UB4GG6htroIzsk7BPWiVXezMyKhz4juKD60LlrOXAOzoaGmZmSJ/OZnJwDJ9h/ulBjzcelyZKQXqsG42MqeybyKV56AODvW9rygSEUg+HeqHWENg2yd8YbIypltPZ6TFe0JDSMMO5y9PZ5UHmyX9gXl3yQ5udZWYc+sxE5vrg8/VwxuRB9EKHXkTJ4jX5+RneUg4GGJ9KDagn" />
+</div>
+	<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentContainer$ctl01', 'liquid_form', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+	<script type="text/javascript" >
+		function entityFormClientValidate() {
+			// Custom client side validation. Method is called by the submit button's onclick event.
+			// Must return true or false. Returning false will prevent the form from submitting.
+			return true;
+		}			
+	</script>
+
+
+
+
+
+
+
+
+
+    
+<style>
+    body > .alert {
+        display: none;
+    }
+</style>
+<div id="vaccination-registration-form" class="container">
+    
+    
+        <div id="WebFormControl_6dc78a9827bdeb118236002248096716">
+	<span><script type="text/javascript">
+
+function dec2hex(dec)
+{
+ return dec.toString(16).padStart(2, "0");
+}
+
+function generateId(len)
+{
+ var arr = new Uint8Array((len || 40) / 2);
+ window.crypto.getRandomValues(arr);
+ return Array.from(arr, dec2hex).join('');
+}
+
+function setCookie(name, value, hours)
+{
+ var expires = "";
+ if (hours)
+ {
+  var date = new Date();
+  date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+  expires = "; expires=" + date.toUTCString();
+ }
+ document.cookie = name + "=" + (value || "") + expires + "; path=/;secure";
+}
+
+
+function expireCookie(name)
+{
+document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
+function getCookie(name)
+{
+ var nameEQ = name + "=";
+ var ca = document.cookie.split(';');
+ for (var i = 0; i < ca.length; i++)
+ {
+  var c = ca[i];
+  while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+  if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+ }
+ return null;
+}
+
+
+
+
+
+
+var vaccineTypes = 
+[
+    
+        {
+            "medicationid": "40889af4-f82d-ed11-9db1-0022482b40c6",
+            "name": "(Age 12+) Pfizer Bivalent Booster",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000001"
+        } 
+        , 
+    
+        {
+            "medicationid": "13452af1-166e-ec11-8943-0022482b17fb",
+            "name": "(Age 12yr+) Pfizer-BioNTech COVID-19 Vaccine",
+            "standarddosequantity": "2",
+            "allowschedule": "true",
+            "vaccinationtype": "100000000"
+        } 
+        , 
+    
+        {
+            "medicationid": "1502c654-282e-ed11-9db1-0022482b40c6",
+            "name": "(Age 18+) Moderna Bivalent Booster",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000001"
+        } 
+        , 
+    
+        {
+            "medicationid": "1fb00374-6786-eb11-a812-000d3a1e0151",
+            "name": "(Age 18yr+) Janssen COVID-19 Vaccine",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000000"
+        } 
+        , 
+    
+        {
+            "medicationid": "654db9a6-bf88-eb11-a812-00224809d23f",
+            "name": "(Age 18yr+) Moderna COVID-19 Vaccine",
+            "standarddosequantity": "2",
+            "allowschedule": "true",
+            "vaccinationtype": "100000000"
+        } 
+        , 
+    
+        {
+            "medicationid": "bb8ea52f-ab3c-ec11-b6e5-0022482110ed",
+            "name": "(Age 5-11yr) Pediatric Pfizer COVID-19 Vaccine",
+            "standarddosequantity": "2",
+            "allowschedule": "true",
+            "vaccinationtype": "100000000"
+        } 
+        , 
+    
+        {
+            "medicationid": "bdbe6d3b-7aee-ec11-bb3d-002248341ed1",
+            "name": "(Age 6mo-4yr) Pediatric Pfizer COVID-19 Vaccine",
+            "standarddosequantity": "3",
+            "allowschedule": "true",
+            "vaccinationtype": "100000000"
+        } 
+        , 
+    
+        {
+            "medicationid": "5c9bd6f8-7aee-ec11-bb3d-002248341ed1",
+            "name": "(Age 6mo-5yr) Moderna Pediatric COVID-19 Vaccine",
+            "standarddosequantity": "2",
+            "allowschedule": "true",
+            "vaccinationtype": "100000000"
+        } 
+        , 
+    
+        {
+            "medicationid": "1821ca0f-978d-ec11-b400-00224828d514",
+            "name": "Adacel (Tdap)",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "cda52942-978d-ec11-b400-00224828d514",
+            "name": "Boostrix (Tdap)",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "4472fa02-3f3b-ec11-b6e5-0022480af46b",
+            "name": "Flublok Quadrivalent",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "e95de503-4a5c-ec11-8f8f-00224825942b",
+            "name": "Flulaval Quadrivalent 0.5ml prefilled syringes",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "e43f1739-3f3b-ec11-b6e5-0022480af46b",
+            "name": "Fluzone High-Dose Quadrivalent",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "56a56e6a-3f3b-ec11-b6e5-0022480af46b",
+            "name": "Fluzone Quadrivalent 0.5-ml prefilled syringes",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "6bc06ea2-3f3b-ec11-b6e5-0022480af46b",
+            "name": "Fluzone Quadrivalent 5-ml multidose vial",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "23880d7f-a648-ec11-8c62-0022480abb33",
+            "name": "General Flu",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "17127475-978d-ec11-b400-00224828d514",
+            "name": "Menactra (MenACWY)",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "24177c06-7224-ed11-b83e-000d3a5700d1",
+            "name": "Menquadfi (MenACWY)",
+            "standarddosequantity": "1",
+            "allowschedule": "true",
+            "vaccinationtype": "100000002"
+        } 
+        , 
+    
+        {
+            "medicationid": "45e765c8-4578-ec11-8d21-00224806d9ed",
+            "name": "Other",
+            "standarddosequantity": "2",
+            "allowschedule": "true",
+            "vaccinationtype": "100000000"
+        } 
+        
+    ];
+
+
+
+//parameter to fire specific web template logic
+
+
+var firstDoseDate = 02/01/2021;
+
+$(document).ready(function () {
+	//Abhishek Vyas : 24012022 : Hiding Vaccination Type 
+	$('#mvm_vaccinationtype').closest('tr').hide();
+	$('#mvm_vaccinationtype').attr('readonly','true');
+	var disableArrowKeys = function(e){
+    if($("select").is(':focus')){
+        if(e.keyCode>=37 || e.keyCode<=40 || e.keyCode==46 || (e.keyCode >= 65 && e.keyCode <= 90)){
+            e.preventDefault();
+        }
+	}
+	}
+	$('#mvm_vaccinationtype').keydown(disableArrowKeys);
+	//End : Abhishek Vyas : 24012022 : Hiding Vaccination Type
+	
+    //Blocks out future dates
+    $("#msemr_firstdosedate")
+        .next()
+        .data("DateTimePicker")
+        .maxDate(moment());
+ $("#msemr_firstdosedate").next().data("DateTimePicker").minDate(moment(new Date(firstDoseDate)));
+    /*("#msemr_dateofpositivecovidresult")
+        .next()
+        .data("DateTimePicker")
+        .maxDate(moment());
+
+    
+    $("#msemr_dateofpositivecovidresult").next().data("DateTimePicker").minDate(moment().subtract(90, 'days').calendar());
+    $('#msemr_dateofpositivecovidresult_datepicker_description').attr("aria-describedby", "dateOfPositiveCovidResultError");
+*/
+    insertHtml();
+	
+
+    //Accessibility Support Onload
+    ProvisionReadOutTag();
+
+    //Yes logic
+    YesLogicForStep1();
+    //YesLogicForStep4();
+
+    //onchange events
+    $('#msemr_isfirstdose').change(function () {
+        OnChangeFirstDose();
+    });
+    $('#msemr_didweadministerfirstdose').change(function () {
+        //OnChangeDidWeAdministerDoseLogic();
+    });
+    $('#msemr_testedpositive').change(function () {
+        //OnChangeTestedPositive();
+    });
+
+    $('#msemr_firstdosevaccine').change(function () {
+        OnChangeVaccineType();
+    });
+	
+	$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').change(function () {
+        OnChangeVaccineToReceive();
+    });
+    QuestionnaireWebFormFineTuning();
+    LoadQuestionnaireWebFormSections();
+    OnLoadWebForm();
+
+    //Post Form Load Accessibility Support
+    addOnChangeSupportForReadOut();
+    
+});
+function OnChangeVaccineToReceive(){
+	$("#ValidationSummaryEntityFormView").hide();
+	$(btnNext0).prop('disabled', false);
+	    $("#requiredFieldList").empty();
+    var unorderedList = $("#requiredFieldList");
+	var OtherVaccineSelectionError = "Other is not a valid vaccine brand for you to receive for this COVID-19 registration.  Please select a vaccine that is NOT Other for the question, What COVID-19 vaccine brand do you want to receive for this COVID-19 registration?";
+    var currentVaccineId = $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").val();
+	var OtherVaccineBrand = "45e765c8-4578-ec11-8d21-00224806d9ed";
+	
+	  for (i = 0; i < vaccineTypes.length; i++) {
+        if (vaccineTypes[i].medicationid === currentVaccineId) {
+            if (OtherVaccineBrand == currentVaccineId) {
+                $("#requiredFieldList").empty();
+                unorderedList.append(`<li>${OtherVaccineSelectionError}</li>`);
+                $("#ValidationSummaryEntityFormView").show();
+				$(btnNext0).prop('disabled', true);
+                return false;
+            
+			}
+			else {
+                $("#ValidationSummaryEntityFormView").hide();
+                $("#requiredFieldList").empty();
+				$(btnNext0).prop('disabled', false);
+                return true;
+            }
+		}
+	  }
+	
+}
+function ProvisionReadOutTag(){
+    var visibleToScreenReaderButNotUser = "<p aria-live='polite' aria-atomic='true' id='readout' style='position:absolute; left:-100000px; top:auto; width:1px; height:1px; overflow:hidden;'></p>"
+    $("[data-name='tab_Questions']").append(visibleToScreenReaderButNotUser);
+}
+
+function addOnChangeSupportForReadOut(){
+    var currentItem = $("[data-name='" + getCookie(stepPanelCookieName) + "']").siblings("fieldset legend");
+    if(currentItem !== 'undefined'){
+        $("#readout").text(currentItem[0].innerText);
+    }
+}
+
+function webFormClientValidateStep1() {
+    $("#requiredFieldList").empty();
+    var unorderedList = $("#requiredFieldList");
+    var firstDoseDateError = "If there was a first dose already given what is the date?";
+    var vaccineTypeError = "Please indicate the type of vaccine.";
+	var othervaccineBrandError = "What COVID-19 vaccine brand do you want to receive for this Covid-19 registration? (Please do not select Other.) is a required field.";
+	var othervaccineTypeError = "What Other COVID-19 Vaccine brand did you receive? is a required field.";
+	var OtherVaccineBrand = "45e765c8-4578-ec11-8d21-00224806d9ed";
+    if ($('#msemr_isfirstdose_1').is(":checked")) {
+        
+            var date = $("#msemr_firstdosedate").val();
+            var vax = $("#msemr_firstdosevaccine").val();
+			
+			var otherVaccine = $("#montco_whatothercovid19vaccinebranddidyoureceive").val();
+			var otherVaccineReceive = $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").val();
+    
+            if (date == "" && vax == "") {
+                $("#requiredFieldList").empty();
+                unorderedList.append(`<li>${firstDoseDateError}</li>`);
+                unorderedList.append(`<li>${vaccineTypeError}</li>`);
+                $("#ValidationSummaryEntityFormView").show();
+                return false;
+            }
+
+            if (date == "" && vax != "") {
+                $("#requiredFieldList").empty();
+                unorderedList.append(`<li>${firstDoseDateError}</li>`);
+                $("#ValidationSummaryEntityFormView").show();
+                return false;
+            }
+
+            if (date != "" && vax == "") {
+            $("#requiredFieldList").empty();
+                unorderedList.append(`<li>${vaccineTypeError}</li>`);
+                $("#ValidationSummaryEntityFormView").show();
+                return false;
+            }
+			if(vax != "" && vax == OtherVaccineBrand && otherVaccine == "" && otherVaccineReceive == ""){
+			$("#requiredFieldList").empty();
+                unorderedList.append(`<li>${othervaccineTypeError}</li>`);
+				unorderedList.append(`<li>${othervaccineBrandError}</li>`);
+                $("#ValidationSummaryEntityFormView").show();
+                return false;
+			}
+			if(vax != "" && vax == OtherVaccineBrand && otherVaccine == ""){
+			$("#requiredFieldList").empty();
+                unorderedList.append(`<li>${othervaccineTypeError}</li>`);
+                $("#ValidationSummaryEntityFormView").show();
+                return false;
+			}
+			if(otherVaccineReceive == ""){
+			$("#requiredFieldList").empty();
+                unorderedList.append(`<li>${othervaccineBrandError}</li>`);
+                $("#ValidationSummaryEntityFormView").show();
+                return false;
+			}
+            else {
+                $("#ValidationSummaryEntityFormView").hide();
+                $("#requiredFieldList").empty();
+                return true;
+            }
+       
+
+        
+    }
+    else {
+			var otherVaccineReceive = $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").val();
+			if(otherVaccineReceive == ""){
+			$("#requiredFieldList").empty();
+                unorderedList.append(`<li>${othervaccineBrandError}</li>`);
+                $("#ValidationSummaryEntityFormView").show();
+                return false;
+			}
+			else
+			{
+			$("#ValidationSummaryEntityFormView").hide();
+			$("#requiredFieldList").empty();
+			return true;
+			}
+    }
+}
+
+function webFormClientValidate() {
+    $("#ValidationSummaryEntityFormView a").css('color', '#000000');
+    if ($('#msemr_testedpositive_1').is(":checked")) {
+        var date = $("#msemr_dateofpositivecovidresult").val();
+        if (date == "") {
+            $("#msemr_dateofpositivecovidresult_datepicker_description").addClass("error");
+            $(".below.positiveDate ").addClass("show");
+            $(".below.positiveDate ").removeClass("hide");
+            return false;
+        }
+        else {
+            $("#msemr_dateofpositivecovidresult_datepicker_description").removeClass("error");
+            $(".below.positiveDate ").addClass("hide");
+            $(".below.positiveDate ").removeClass("show");
+            return true;
+        }
+    }
+    else {
+        $("#msemr_dateofpositivecovidresult_datepicker_description").removeClass("error");
+        $(".below.positiveDate ").addClass("hide");
+        $(".below.positiveDate ").removeClass("show");
+        return true;
+    }
+}
+
+function YesLogicForStep1() {
+    if ($('#msemr_isfirstdose_1').is(":checked")) {
+
+      $("#warningDiv").hide();
+            $("#msemr_firstdosedate").closest(".control").prev().addClass("required");
+            $("#msemr_firstdosedate_datepicker_description").attr('aria-required', 'true');
+            $("#msemr_firstdosedate").parents('tr').first().show();
+            $("#msemr_firstdosevaccine").closest(".control").prev().addClass("required");
+            $("#msemr_firstdosevaccine").attr('aria-required', 'true');
+            $("#msemr_firstdosevaccine").parents('tr').first().show();
+            $("#asteriskIndicationDiv").show();
+
+			$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().addClass("required");
+			$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").attr('aria-required', 'true');
+			
+            $("#ValidationSummaryEntityFormView").hide();
+            $("#requiredFieldList").empty();
+    }
+    else {
+
+        $("#msemr_firstdosedate").closest(".control").prev().removeClass("required");
+        $("#msemr_firstdosedate").parents('tr').first().hide();
+        $("#msemr_firstdosevaccine").closest(".control").prev().removeClass("required");
+        $("#msemr_firstdosevaccine").parents('tr').first().hide();
+		
+/* 		$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').parent().parent().hide();
+		$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').val("");
+		$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().removeClass("required");
+        $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").attr('aria-required', 'false'); */
+
+		$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().addClass("required");
+        $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").attr('aria-required', 'true');
+		
+		$('#montco_whatothercovid19vaccinebranddidyoureceive').parent().parent().hide();
+		$('#montco_whatothercovid19vaccinebranddidyoureceive').val("");
+		$("#montco_whatothercovid19vaccinebranddidyoureceive").closest(".control").prev().removeClass("required");
+        $("#montco_whatothercovid19vaccinebranddidyoureceive").attr('aria-required', 'false')
+		
+   		$("#warningDiv").hide();
+        $("#asteriskIndicationDiv").hide();
+    }
+}
+
+function YesLogicForStep4() {
+    if ($('#msemr_testedpositive_1').is(":checked")) {
+        $("#msemr_dateofpositivecovidresult").closest(".control").prev().addClass("required");
+        $("#msemr_dateofpositivecovidresult_datepicker_description").attr('aria-required', 'true');
+        $("#msemr_dateofpositivecovidresult").parents('tr').first().show();
+        $("#asteriskIndicationDiv2").show();
+    }
+    else {
+        $("#msemr_dateofpositivecovidresult").closest(".control").prev().removeClass("required");
+        $("#msemr_dateofpositivecovidresult_datepicker_description").attr('aria-required', 'false');
+        $("#msemr_dateofpositivecovidresult").parents('tr').first().hide();
+        $("#asteriskIndicationDiv2").hide();
+    }
+}
+
+function OnChangeDidWeAdministerDoseLogic() {
+    var btn0 = $('#btnNext0');
+    if ($('#msemr_didweadministerfirstdose_1').is(":checked")) {
+        $("#msemr_firstdosedate").parents('tr').first().hide();
+        $("#msemr_firstdosevaccine").parents('tr').first().hide();
+        $("#msemr_firstdosedate_datepicker_description").val("");
+        $("#msemr_firstdosedate_datepicker").val("");
+        $("#msemr_firstdosedate").val("");
+        $("#msemr_firstdosevaccine").val("");
+        $("#msemr_firstdosevaccine").closest(".control").prev().removeClass("required");
+        $("#msemr_firstdosevaccine").attr('aria-required', 'false');
+        $("#msemr_firstdosedate").closest(".control").prev().removeClass("required");
+        $("#msemr_firstdosedate_datepicker_description").attr('aria-required', 'false');        $("#ValidationSummaryEntityFormView").hide();
+        $("#requiredFieldList").empty();        $("#warningDiv").show();
+        $('#singleDoseMessage').remove();
+        //disable the next button        
+        $(btn0).prop('disabled', true);
+        $("#asteriskIndicationDiv").hide();
+    }
+    else {
+        $("#msemr_firstdosedate").closest(".control").prev().addClass("required");
+        $("#msemr_firstdosedate_datepicker_description").attr('aria-required', 'true');
+        $("#msemr_firstdosedate").parents('tr').first().show();
+        $("#msemr_firstdosevaccine").closest(".control").prev().addClass("required");
+        $("#msemr_firstdosevaccine").attr('aria-required', 'true');
+        $("#msemr_firstdosevaccine").parents('tr').first().show();
+        document.getElementById("msemr_firstdosedate_label").focus();
+        $("#warningDiv").hide();
+        $('#singleDoseMessage').remove();
+        //enable the next button        
+        $(btn0).prop('disabled', false);
+        $("#asteriskIndicationDiv").show();
+    }
+}
+
+function OnChangeFirstDose() {
+  
+    if ($('#msemr_isfirstdose_1').is(":checked")) {
+        //display the field
+        //$("#msemr_didweadministerfirstdose").parents('tr').first().show();
+
+        $("#msemr_firstdosedate").parents('tr').first().show();
+        $("#msemr_firstdosevaccine").parents('tr').first().show();
+        $("#msemr_firstdosedate_datepicker_description").val("");
+        $("#msemr_firstdosedate_datepicker").val("");
+        $("#msemr_firstdosedate").val("");
+        $("#msemr_firstdosevaccine").val("");
+        $("#msemr_firstdosevaccine").closest(".control").prev().addClass("required");
+        $("#msemr_firstdosevaccine").attr('aria-required', 'true');
+        $("#msemr_firstdosedate").closest(".control").prev().addClass("required");
+        $("#msemr_firstdosedate_datepicker_description").attr('aria-required', 'true');
+        $("#ValidationSummaryEntityFormView").hide();
+        $("#requiredFieldList").empty();
+
+        //$("#msemr_didweadministerfirstdose_label" ).setAttribute("role", "alert");
+		
+/* 		$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').parent().parent().show();
+		$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').val("");
+		$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().addClass("required");
+        $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").attr('aria-required', 'true'); */
+		
+/* 		$('#montco_whatothercovid19vaccinebranddidyoureceive').parent().parent().hide();
+		$('#montco_whatothercovid19vaccinebranddidyoureceive').val("");
+		$("#montco_whatothercovid19vaccinebranddidyoureceive").closest(".control").prev().removeClass("required");
+        $("#montco_whatothercovid19vaccinebranddidyoureceive").attr('aria-required', 'false');   */        
+
+        //display the html code
+        $("#warningDiv").hide();
+        $('#singleDoseMessage').remove();
+        $("#asteriskIndicationDiv").show();
+    }
+    else {
+       
+        //$("#msemr_didweadministerfirstdose").parents('tr').first().hide();
+        //$("#msemr_didweadministerfirstdose_0").prop("checked", true);
+        $("#msemr_firstdosedate").parents('tr').first().hide();
+        $("#msemr_firstdosevaccine").parents('tr').first().hide();
+        $("#msemr_firstdosedate_datepicker_description").val("");
+        $("#msemr_firstdosedate_datepicker").val("");
+        $("#msemr_firstdosedate").val("");
+        $("#msemr_firstdosevaccine").val("");
+        $("#msemr_firstdosevaccine").closest(".control").prev().removeClass("required");
+        $("#msemr_firstdosevaccine").attr('aria-required', 'false');
+        $("#msemr_firstdosedate").closest(".control").prev().removeClass("required");
+        $("#msemr_firstdosedate_datepicker_description").attr('aria-required', 'false');
+		
+/* 		$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').parent().parent().hide();
+		$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').val("");
+		$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().removeClass("required");
+        $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").attr('aria-required', 'false');*/
+		
+		
+		$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").val(""); 
+		$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').removeAttr('readonly');
+		$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').css("pointer-events", "all");
+		
+		
+		$('#montco_whatothercovid19vaccinebranddidyoureceive').parent().parent().hide();
+		$('#montco_whatothercovid19vaccinebranddidyoureceive').val("");
+		$("#montco_whatothercovid19vaccinebranddidyoureceive").closest(".control").prev().removeClass("required");
+        $("#montco_whatothercovid19vaccinebranddidyoureceive").attr('aria-required', 'false');
+		$("#montco_whatothercovid19vaccinebranddidyoureceive").val("");
+		
+		
+        $("#ValidationSummaryEntityFormView").hide();
+        $("#requiredFieldList").empty();
+        $("#warningDiv").hide();
+        $('#singleDoseMessage').remove();
+        $('#btnNext0').prop('disabled', false);
+        $("#asteriskIndicationDiv").hide();
+    }
+}
+
+function OnChangeTestedPositive() {
+    if ($('#msemr_testedpositive_1').is(":checked")) {
+        $("#msemr_dateofpositivecovidresult").closest(".control").prev().addClass("required");
+        $("#msemr_dateofpositivecovidresult_datepicker_description").attr('aria-required', 'true');
+        $("#msemr_dateofpositivecovidresult").parents('tr').first().show();
+        var date = $("#msemr_dateofpositivecovidresult").val();
+        $("#asteriskIndicationDiv2").show();
+    }
+    else {
+        $("#msemr_dateofpositivecovidresult").parents('tr').first().hide();
+        $("#msemr_dateofpositivecovidresult_datepicker_description").val("");
+        $("#msemr_dateofpositivecovidresult").val("");
+        $("#msemr_dateofpositivecovidresult_datepicker_description").attr('aria-required', 'false');
+        $(".below.positiveDate ").addClass("hide");
+        $(".below.positiveDate ").removeClass("show");
+        $("#msemr_dateofpositivecovidresult_datepicker_description").removeClass("error");
+        $("#asteriskIndicationDiv2").hide();
+    }
+}
+
+function ConfirmEmail() {
+    $("#emailaddress1, #emailaddress2").change(function () {
+        var email = $('#emailaddress1').val();
+        var confirmEmail = $('#emailaddress2').val();
+
+        if (email != "" && confirmEmail != "") {
+            if (email == confirmEmail) {
+                $('#emailaddress2').removeClass("error");
+                $('#confirmDiv').css("display", "none");
+                $("#NextButton").prop('disabled', false);
+            }
+            else {
+                $('#emailaddress2').addClass("error");
+                $('#confirmDiv').css("display", "inline-block");
+                $("#NextButton").prop('disabled', true);
+            }
+        }
+
+        else if (email == "" && confirmEmail != "") {
+            $('#emailaddress2').addClass("error");
+            $('#confirmDiv').css("display", "inline-block");
+            $("#NextButton").prop('disabled', true);
+        }
+
+        else if (email != "" && confirmEmail == "") {
+            $('#emailaddress2').removeClass("error");
+            $('#confirmDiv').css("display", "none");
+            $("#NextButton").prop('disabled', false);
+        }
+        else if (email == "" && confirmEmail == "") {
+            $('#emailaddress2').removeClass("error");
+            $('#confirmDiv').css("display", "none");
+            $("#NextButton").prop('disabled', false);
+        }
+    });
+}
+
+function insertHtml() {
+    var fieldsets = $("fieldset");
+    var currentSectionName = fieldsets[0].getElementsByTagName('table')[0].dataset.name;
+    var warningText = "If you need the second dose of your vaccine, we’ll send you an email to schedule an appointment for the second dose. If you received the single-dose Johnson & Johnson vaccine, then your vaccination is complete and you can leave this site.";
+
+    var warningHtml =
+        `<div id="warningDiv" style="display: inline-flex; width: 70%;">
+        <table>
+        <tbody><tr>
+        <td style="padding-top: 5px; vertical-align: top; color: #797775;">
+        <span style="color: #797775;" id="warn" class="glyphicon glyphicon-warning-sign"></span>
+        </td>
+        <td style="vertical-align: top;">
+        <div class="control-info-message">`
+        + warningText +
+        `</div>
+        </td>
+        </tr>
+        </tbody></table>`;
+
+    $("[data-name='" + currentSectionName + "']").closest('fieldset').append(warningHtml);
+
+    var asteriskHtml = `<div id="asteriskIndicationDiv" class="required-text-info"><p><span>*</span> Indicates a required field</p></div>`;
+    $("[data-name='" + currentSectionName + "']").closest('fieldset').prepend(asteriskHtml);
+
+    var asteriskHtml = `<div id="asteriskIndicationDiv2" class="required-text-info"><p><span>*</span> Indicates a required field</p></div>`;
+    $("[data-name='section_CovidHistory']").closest('fieldset').prepend(asteriskHtml);
+
+    $('#msemr_firstdosedate_datepicker_description').attr("aria-describedby", "firstDoseDateError");
+    $('#msemr_firstdosevaccine').attr("aria-describedby", "firstDoseVaccineError");
+    var validationErrorHtml = `<h4 class="validation-header">
+                                <span role="presentation" class="fa fa-info-circle"></span>
+                                The form could not be submitted for the following reasons:
+                                </h4>
+                                <ul id="requiredFieldList" role="presentation">
+                                </ul>`;
+    $("#ValidationSummaryEntityFormView").append(validationErrorHtml);
+
+}
+
+function OnChangeVaccineType() {
+    var btn0 = $(':input[type="button"]')[0];
+    var currentVaccineId = $("#msemr_firstdosevaccine").val();
+	var OtherVaccineBrand = "45e765c8-4578-ec11-8d21-00224806d9ed";
+    for (i = 0; i < vaccineTypes.length; i++) {
+        if (vaccineTypes[i].medicationid === currentVaccineId) {
+            var singleDoseMessage = "";
+            if (vaccineTypes[i].standarddosequantity === "1") {
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').val("");
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').removeAttr('readonly');
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').css("pointer-events", "all");
+			var EnableArrowKeys = function(e){
+			return true;
+			}
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').keydown(EnableArrowKeys);
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').parent().parent().hide();
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').val("");
+			$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().removeClass("required");
+			$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").attr('aria-required', 'false');
+            $("#ValidationSummaryEntityFormView").hide();
+                $("#requiredFieldList").empty();                $(btnNext0).prop('disabled', true);
+                $('div.description.below.drop.firstDoseVaccine').hide();
+                $('#singleDoseMessage').remove();
+                var singleDoseMessage =
+                    `<div id="singleDoseMessage" class="control-info-message">If the dose you received was the ` + vaccineTypes[i].name +
+                    `, then your vaccination is complete and you can leave this site.</div>`;
+                $('#warningDiv').before(singleDoseMessage);
+                break;
+            }
+            else if (vaccineTypes[i].allowschedule == "false") {
+            	$("#ValidationSummaryEntityFormView").hide();
+                $("#requiredFieldList").empty();                $(btnNext0).prop('disabled', true);
+                $('div.description.below.drop.firstDoseVaccine').hide();
+                $('#singleDoseMessage').remove();
+                var vaccineNotAdministeredMessage = "We aren’t currently providing doses of the vaccine you’ve indicated. Please schedule an appointment with the provider who administered your first dose";
+
+                var singleDoseMessage =
+                        `<div id="singleDoseMessage" style="display: inline-flex; width: 70%;">
+                        <table>
+                        <tbody><tr>
+                        <td style="padding-top: 5px; vertical-align: top; color: #797775;">
+                        <span style="color: #797775;" id="warn" class="glyphicon glyphicon-warning-sign"></span>
+                        </td>
+                        <td style="vertical-align: top;">
+                        <div class="control-info-message">`
+                        + vaccineNotAdministeredMessage +
+                        `</div>
+                        </td>
+                        </tr>
+                        </tbody></table>`;
+
+
+                $('#warningDiv').before(singleDoseMessage);
+                break;
+            }
+			else if (vaccineTypes[i].standarddosequantity === "2" && OtherVaccineBrand != currentVaccineId) {
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').val(currentVaccineId)
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').attr('readonly','true');
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').css("pointer-events", "none");
+			var disableArrowKeys = function(e){
+				if($("select").is(':focus')){
+					if(e.keyCode>=37 || e.keyCode<=40 || e.keyCode==46 || (e.keyCode >= 65 && e.keyCode <= 90)){
+					e.preventDefault();
+					}
+				}
+			}
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').keydown(disableArrowKeys);
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').parent().parent().show();
+			$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().addClass("required");
+			$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").attr('aria-required', 'true');
+			}
+			else			
+			{
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').val("")
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').removeAttr('readonly');
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').css("pointer-events", "all");
+			var EnableArrowKeys = function(e){
+			return true;
+			}
+			$('#montco_whatcovid19vaccinebranddoyouwanttoreceive').keydown(EnableArrowKeys);
+			}	
+        }
+        else {
+            $(btnNext0).prop('disabled', false);
+            $('div.description.below.drop.firstDoseVaccine').show();
+            $('#singleDoseMessage').remove();
+        }
+    }
+	
+	
+	
+	if(currentVaccineId == OtherVaccineBrand)
+{
+		  $("#montco_whatothercovid19vaccinebranddidyoureceive").closest(".control").prev().addClass("required");
+          $("#montco_whatothercovid19vaccinebranddidyoureceive").attr('aria-required', 'true');
+          $("#montco_whatothercovid19vaccinebranddidyoureceive").parent().parent().show();
+		  
+		  $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().addClass("required");
+          $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").attr('aria-required', 'true');
+          $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").parent().parent().show();
+          
+		  
+		 // $("#asteriskIndicationDiv").show();
+          //$("#ValidationSummaryEntityFormView").hide();
+          //$("#requiredFieldList").empty();
+}
+else{
+		$("#montco_whatothercovid19vaccinebranddidyoureceive").closest(".control").prev().removeClass("required");
+        $("#montco_whatothercovid19vaccinebranddidyoureceive").parent().parent().hide();
+		$("#montco_whatothercovid19vaccinebranddidyoureceive").val("");
+		
+/* 		$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").closest(".control").prev().removeClass("required");
+        $("#montco_whatcovid19vaccinebranddoyouwanttoreceive").parent().parent().hide();
+		$("#montco_whatcovid19vaccinebranddoyouwanttoreceive").val("");     */
+		//$("#warningDiv").hide();
+        //$("#asteriskIndicationDiv").hide();
+}
+	
+}
+
+function NextButtonOnClick(btnControl) {
+    var allFieldsets = $("fieldset");
+    var step;
+
+    var cookie = getCookie(stepPanelCookieName);
+
+    //move to next step and hide others
+    for (var j = 0; j < allFieldsets.length; j++) {
+        if (allFieldsets[j].getElementsByTagName('table')[0].dataset.name == cookie) {
+            step = j + 1;
+            break;
+        }
+    }
+
+    for (var j = 0; j < allFieldsets.length; j++) {
+        if (j == step) {
+            $(allFieldsets[j]).show();
+            setCookie(stepPanelCookieName, allFieldsets[j].getElementsByTagName('table')[0].dataset.name, 1);
+        }
+        else {
+            $(allFieldsets[j]).hide();
+        }
+    }
+    if (step == allFieldsets.length - 1) {
+        $("#btnPreviousButton").parent().parent().parent().show();
+    }
+    else {
+        $("#btnPreviousButton").parent().parent().parent().hide();
+    }
+}
+
+function PreviousButtonOnClick(btnControl) {
+    var allFieldsets = $("fieldset");
+    var step;
+
+    var cookie = getCookie(stepPanelCookieName);
+
+    //move to next step and hide others
+    for (var j = 0; j < allFieldsets.length; j++) {
+        if (allFieldsets[j].getElementsByTagName('table')[0].dataset.name == cookie) {
+            step = j - 1;
+            break;
+        }
+    }
+
+    for (var i = 0; i < allFieldsets.length; i++) {
+        if (i == step) {
+            $(allFieldsets[i]).show();
+            setCookie(stepPanelCookieName, allFieldsets[i].getElementsByTagName('table')[0].dataset.name, 1);
+        }
+        else {
+            $(allFieldsets[i]).hide();
+        }
+    }
+    if (step == allFieldsets.length - 1) {
+        $("#btnPreviousButton").parent().parent().parent().show();
+    }
+    else {
+        $("#btnPreviousButton").parent().parent().parent().hide();
+    }
+}
+
+function OnLoadWebForm() {
+    var cookieValue = getCookie(stepPanelCookieName);
+    var allFieldsets = $("fieldset");
+    var step;
+
+    var cookieFieldSet = $("[data-name='" + cookieValue + "']").closest('fieldset');
+
+    if (!cookieFieldSet.length == 0) {
+        $(allFieldsets).hide();
+        $("[data-name='" + cookieValue + "']").closest('fieldset').show();
+
+        //move to next step and hide others
+        for (var j = 0; j < allFieldsets.length; j++) {
+            if (allFieldsets[j].getElementsByTagName('table')[0].dataset.name == cookieValue) {
+                step = j;
+            }
+            if (j == step) {
+                $("#btnPreviousButton").parent().parent().parent().show();
+            }
+            else {
+                $("#btnPreviousButton").parent().parent().parent().hide();
+            }
+        }
+    }
+    else {
+        for (var j = 0; j < allFieldsets.length; j++) {
+            if (j == 0) {
+                $(allFieldsets[0]).show();
+                setCookie(stepPanelCookieName, allFieldsets[0].getElementsByTagName('table')[0].dataset.name, 1);
+            }
+            else {
+                $(allFieldsets[j]).hide();
+            }
+        }
+    }
+
+    for (var k = 0; k < allFieldsets.length; k++) {
+        ////Hide the legend element and add h2 element to display the titles
+        if (allFieldsets[k].getElementsByTagName('legend').length != 0) {
+            var legendCtrl = allFieldsets[k].getElementsByTagName('legend')[0];
+            var titleText = legendCtrl.innerHTML;
+            $(`<h2 class="section-title">${titleText}</h2>`).insertAfter(legendCtrl);
+			$("fieldset[aria-label='Medical History'] h2.section-title").after(`<div style="font-size: 20px;" tabindex="1">Please complete the following medical history related questions.</div><br>`);
+            legendCtrl.style.display = "none";
+        }
+    }
+}
+
+function LoadQuestionnaireWebFormSections() {
+    var fieldsetsOnWebForm = $("fieldset");
+    if (typeof (fieldsetsOnWebForm) == "object") {
+        for (var i = 0; i < fieldsetsOnWebForm.length; i++) {
+            var buttonIdNext = "btnNext" + i;
+            var buttonIdPrevious = "btnPrevious" + i;
+            var currentSectionName = fieldsetsOnWebForm[i].getElementsByTagName('table')[0].dataset.name;
+
+            if (i == 0) {
+                var htmlText =
+                    `<div id = "` + currentSectionName + "Div" + `" class= "actions">
+                <div role="group" class="btn-group entity-action-button">
+                <input id="` + buttonIdNext + `" type="button" value="Next" class="btn btn-primary button next submit-btn">
+                </div>
+                </div>`;
+
+                $("[data-name='" + currentSectionName + "']").closest('fieldset').append(htmlText);
+
+                //On-CLick Event
+                $("#" + buttonIdNext).click(function () {
+
+                    if (webFormClientValidateStep1()) {
+                        if ($("#msemr_eventcode").val()) {
+                            ApplyEventCode();
+                        }
+                        else {
+                            NextButtonOnClick(this);
+                            addOnChangeSupportForReadOut();
+                        }
+                    }
+                });
+            }
+            else if (i == fieldsetsOnWebForm.length - 1) {
+                $("#NextButton").parent().before(
+                    `<div role="group" class="btn-group entity-action-button">
+                    <input id="btnPreviousButton" type="button" value="Previous" class="btn btn-default button previous previous-btn">
+                    </div>`
+                );
+
+                $("#btnPreviousButton").click(function () {
+				
+                    PreviousButtonOnClick(this);
+					previousStageCheck();
+                    addOnChangeSupportForReadOut();		
+                });
+            }
+            else {
+                //Both Next and Previous buttons
+                var htmlText =
+                    `<div id = "` + currentSectionName + "Div" + `" class= "actions">
+                    <div role="group" class="btn-group entity-action-button">
+                    <input id="` + buttonIdPrevious + `" type="button" value="Previous" class="btn btn-default button previous previous-btn">
+                    </div>
+
+                    <div role="group" class="btn-group entity-action-button">
+                    <input id="` + buttonIdNext + `" type="button" value="Next" class="btn btn-primary button next submit-btn">
+                    </div>
+                    </div>`;
+                $("[data-name='" + currentSectionName + "']").closest('fieldset').append(htmlText);
+
+                //On-CLick Event  
+                $("#" + buttonIdNext).click(function () {
+				
+					if (clientValidateFieldMandatoryCheck()) {
+						NextButtonOnClick(this);
+						addOnChangeSupportForReadOut();
+					}
+                });
+
+                $("#" + buttonIdPrevious).click(function () {
+				
+                    PreviousButtonOnClick(this);
+					previousStageCheck();
+                    addOnChangeSupportForReadOut();
+					
+                });
+            }
+        }
+        
+    }
+}
+
+function QuestionnaireWebFormFineTuning() {
+    $("#NextButton").parent().parent().parent().hide();
+    $('#msemr_webformsessioncookievalue').closest('tr').hide();
+    $('#msemr_eventcodesessioncookievalue').closest('tr').hide();
+}
+
+function ApplyEventCode(){
+    var unorderedList = $("#requiredFieldList");
+    const eventCode = $("#msemr_eventcode").val();
+    if (eventCode) {
+        window.fetch(`/api/eventdetails/?eventcode=${eventCode.toUpperCase()}`)
+            .then(results => results.json())
+            .then(events => {
+                if (events.length == 1) {
+                    if (events[0].message == "success") {
+
+                        var recommendationDose = "935000000";
+                        if ($('#msemr_isfirstdose_1').is(":checked")) {
+                            recommendationDose = "935000001";
+                        }
+                        var recommendationVaccine = $("#msemr_firstdosevaccine").val();
+
+                        if (events[0].dose == recommendationDose || events[0].dose == 935000002) {
+                            if (recommendationDose == 935000001) {
+                                if (events[0].vaccineid == recommendationVaccine) {                                    
+                                    setCookie("WebFormSession_MVMEventCodeId", events[0].id, 1);
+                                    setCookie("WebFormSession_MVMEventCodeName", events[0].name, 1);
+                                    $("#msemr_eventcodesessioncookievalue_name").attr("value", events[0].name);
+                                    $("#msemr_eventcodesessioncookievalue").attr("value", events[0].id);
+                                    $("#msemr_eventcodesessioncookievalue_entityname").attr("value", "msemr_vaccinationeventcode");
+
+                                    NextButtonOnClick(this);
+                                    addOnChangeSupportForReadOut();
+                                    return true;
+                                }
+                                else {
+                                    expireCookie("WebFormSession_MVMEventCodeId");
+                                    expireCookie("WebFormSession_MVMEventCodeName");
+                                    $("#msemr_eventcodesessioncookievalue").attr("value", "");
+                                    $("#requiredFieldList").empty();
+                                    unorderedList.append(`<li>That event is not administering the vaccine you require.</li>`);
+                                    $("#ValidationSummaryEntityFormView").show();
+                                    return false;
+                                }
+                            }
+                            else {
+                                setCookie("WebFormSession_MVMEventCodeId", events[0].id, 1);
+                                setCookie("WebFormSession_MVMEventCodeName", events[0].name, 1);
+                                $("#msemr_eventcodesessioncookievalue_name").attr("value", events[0].name);
+                                $("#msemr_eventcodesessioncookievalue").attr("value", events[0].id);
+                                $("#msemr_eventcodesessioncookievalue_entityname").attr("value", "msemr_vaccinationeventcode");
+
+                                NextButtonOnClick(this);
+                                addOnChangeSupportForReadOut();
+                                return true;
+                            }
+                        }
+                        else if (events[0].dose == 935000000 && recommendationDose == 935000001) {
+                            expireCookie("WebFormSession_MVMEventCodeId");
+                            expireCookie("WebFormSession_MVMEventCodeName");
+                            $("#msemr_eventcodesessioncookievalue").attr("value", "");
+                            $("#requiredFieldList").empty();
+                            unorderedList.append(`<li>That event is only accepting appointments for a first dose.</li>`);
+                            $("#ValidationSummaryEntityFormView").show();
+                            return false;
+                        }
+                        else if (events[0].dose == 935000001 && recommendationDose == 935000000) { 
+                            expireCookie("WebFormSession_MVMEventCodeId");
+                            expireCookie("WebFormSession_MVMEventCodeName");
+                            $("#msemr_eventcodesessioncookievalue").attr("value", "");
+                            $("#requiredFieldList").empty();
+                            unorderedList.append(`<li>That event is only accepting appointments for a second dose.</li>`);
+                            $("#ValidationSummaryEntityFormView").show();
+                            return false;
+                        }
+                    }
+                    else if (events[0].message == "invalid") {    
+                        expireCookie("WebFormSession_MVMEventCodeId");
+                        expireCookie("WebFormSession_MVMEventCodeName");
+                        $("#msemr_eventcodesessioncookievalue").attr("value", "");
+                        $("#requiredFieldList").empty();                        
+                        unorderedList.append(`<li>Sorry, didn’t recognize that event code. Make sure you entered the code correctly.</li>`);
+                        $("#ValidationSummaryEntityFormView").show();
+                        return false;
+                    }
+                    else {
+                        expireCookie("WebFormSession_MVMEventCodeId");
+                        expireCookie("WebFormSession_MVMEventCodeName");
+                        $("#msemr_eventcodesessioncookievalue").attr("value", "");
+                        $("#requiredFieldList").empty();
+                        unorderedList.append(`<li>That event code has expired. Please enter a different event code.</li>`);
+                        $("#ValidationSummaryEntityFormView").show();
+                        return false;
+                    }
+                }
+                else {
+                    expireCookie("WebFormSession_MVMEventCodeId");
+                    expireCookie("WebFormSession_MVMEventCodeName");
+                    $("#msemr_eventcodesessioncookievalue").attr("value", "");
+                    $("#requiredFieldList").empty();
+                    unorderedList.append(`<li>That event code is associated to more than one schedule.</li>`);
+                    $("#ValidationSummaryEntityFormView").show();
+                    return false;
+                }
+            });
+
+    }
+    else {  
+        expireCookie("WebFormSession_MVMEventCodeId");
+        expireCookie("WebFormSession_MVMEventCodeName");
+        $("#msemr_eventcodesessioncookievalue").attr("value", "");
+        $("#ValidationSummaryEntityFormView").hide();
+        $("#requiredFieldList").empty();
+        return true;
+    }
+}
+
+
+if (getCookie("stage") == null) {
+    setCookie("stage", "", 1);
+}
+else if (getCookie("stage") == "three") {
+    setCookie("stage", "", 1);
+}
+		
+function clientValidateFieldMandatoryCheck() {
+
+
+    if (getCookie("stage") == "")
+    {
+        var currenrLivingStatus = $("#montco_whatisyourcurrentlivingstatus").val();
+        if (currenrLivingStatus == "" || currenrLivingStatus == null) {
+            $("#errorl").removeClass("hide");
+            return false;
+        }
+        else {
+            $("#errorl").addClass("hide");
+            setCookie("stage", "one", 1);
+
+            return true;
+        }
+    }
+    else if (getCookie("stage") == "one") {
+        var healthCare = $("#montco_doyouworkinhealthcare").val();
+        if (healthCare == "" || healthCare == null) {
+            $("#error1").removeClass("hide");
+            return false;
+        }
+        else {
+            $("#error1").addClass("hide");
+            setCookie("stage", "two", 1);
+            return true;
+        }
+    }
+    else if (getCookie("stage") == "two") {
+        var areYouaMontcoResident = $("#montco_areyouamontgomerycountyresident").val();
+        var whatBestDescribeYourWork = $("#montco_whatbestdescribesyourwork").val();
+
+        if (areYouaMontcoResident == "" || areYouaMontcoResident == null) {
+            $("#error2").removeClass("hide");
+            if (whatBestDescribeYourWork == "" || whatBestDescribeYourWork == null) {
+                $("#error3").removeClass("hide");
+                return false;
+            }
+            else {
+                $("#error3").addClass("hide");
+            }
+            return false;
+        }
+        else {
+            $("#error2").addClass("hide");
+            if (whatBestDescribeYourWork == "" || whatBestDescribeYourWork == null) {
+                $("#error3").removeClass("hide");
+                return false;
+            }
+            else {
+                $("#error3").addClass("hide");
+                setCookie("stage", "three", 1);
+                return true;
+            }
+        }
+
+    }
+
+
+
+
+}
+
+function previousStageCheck() {
+
+
+
+    if (getCookie("stage") == "two") {
+        $("#errorl").addClass("hide");
+        $("#error2").addClass("hide");
+        $("#error3").addClass("hide");
+        setCookie("stage", "one", 1);
+    }
+    else if (getCookie("stage") == "three") {
+        $("#error1").addClass("hide");
+        $("#errorl").addClass("hide");
+        setCookie("stage", "two", 1);
+    }
+    else {
+        $("#error1").addClass("hide");
+        $("#error2").addClass("hide");
+        $("#error3").addClass("hide");
+        setCookie("stage", "", 1);
+    }
+
+}
+
+var cookieName = "WebFormSession_MVMEligibility";
+var stepPanelCookieName = "WebForm_MVMstepPanelCookie";
+var eventCodeId = "WebFormSession_MVMEventCodeId";
+var eventCodeName = "WebFormSession_MVMEventCodeName";
+
+$(document).ready(function () {
+    var cookieValue = getCookie(cookieName);
+    var stepPanelCookieValue = getCookie(stepPanelCookieName);
+    var eventcodeCookieValue= getCookie(eventCodeId);
+    var eventcodeCookieName= getCookie(eventCodeName);
+    var entityId = $("#EntityFormView_EntityID").val();
+   
+    if (!entityId) {
+        cookieValue = generateId(96);
+        setCookie("WebFormSession_MVMEligibility", cookieValue, 1);
+    }
+    $("#msemr_webformsessioncookievalue").val(cookieValue);
+    $("#msemr_eventcodesessioncookievalue_name").attr("value",eventcodeCookieName);
+    $("#msemr_eventcodesessioncookievalue").attr("value",eventcodeCookieValue);
+    $("#msemr_eventcodesessioncookievalue_entityname").attr("value","msemr_vaccinationeventcode");
+
+    $('#msemr_eventcode').closest('tr').hide();
+});</script></span><div id="WebFormPanel" class="crmEntityFormView" onkeypress="javascript:return&#32;WebForm_FireDefaultButton(event,&#32;&#39;NextButton&#39;)">
+		<div id="EntityFormView" class="entity-form">
+			<input type="hidden" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$EntityFormView_EntityName" id="EntityFormView_EntityName" value="msemr_covidvaccineeligibility" /><input type="hidden" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$EntityFormView_EntityID" id="EntityFormView_EntityID" /><input type="hidden" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$EntityFormView_EntityState" id="EntityFormView_EntityState" /><input type="hidden" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$EntityFormView_EntityStatus" id="EntityFormView_EntityStatus" /><span id="EntityFormView_EntityLayoutConfig" data-form-layout="{&quot;EntityName&quot;:&quot;msemr_covidvaccineeligibility&quot;,&quot;Id&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;SubmitActionLink&quot;:{&quot;Modal&quot;:{},&quot;Type&quot;:0,&quot;Enabled&quot;:false,&quot;ShowModal&quot;:0,&quot;FilterCriteriaId&quot;:&quot;5dfee9b7-ec29-4a45-b1e7-cbe3c0bb1058&quot;},&quot;PreviousActionLink&quot;:{&quot;Type&quot;:0,&quot;Enabled&quot;:false,&quot;ShowModal&quot;:0,&quot;FilterCriteriaId&quot;:&quot;4ba9cbd6-973f-4d47-af42-a5ac2cfa8a72&quot;},&quot;NextActionLink&quot;:{&quot;Type&quot;:0,&quot;Enabled&quot;:false,&quot;ShowModal&quot;:0,&quot;FilterCriteriaId&quot;:&quot;a1d5dff1-915b-4239-b053-e75ee756f018&quot;},&quot;CreateRelatedRecordActionLink&quot;:{&quot;Modal&quot;:{},&quot;Type&quot;:0,&quot;Enabled&quot;:false,&quot;ShowModal&quot;:0,&quot;FilterCriteriaId&quot;:&quot;6932fadd-f772-4551-8a98-c2294e93569b&quot;},&quot;EnableEntityPermissions&quot;:false,&quot;LanguageCode&quot;:0,&quot;EnableActions&quot;:false,&quot;ShowActionButtonContainer&quot;:0,&quot;AutoGenerateSteps&quot;:false}"></span><div id="ValidationSummaryEntityFormView" class="validation-summary&#32;alert&#32;alert-error&#32;alert-danger&#32;alert-block" role="alert" style="display:none;">
+
+			</div><div data-name="tab_Questions" class="tab&#32;clearfix"><div class="tab-column" style="width:100%;"><div><fieldset aria-label="First&#32;Dose"><legend class="section-title"></legend><table role="presentation" data-name="tab_Questions_section_5" class="section"><colgroup><col style="width:100%;" /><col /></colgroup>
+			<tr>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			
+			</table></fieldset><fieldset aria-label="Medical&#32;History"><legend class="section-title">Medical History</legend><table role="presentation" data-name="section_FirstDose" class="section"><colgroup><col style="width:100%;" /><col /></colgroup><tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;boolean-radio-cell"><div class="info"><label id="msemr_severeallergicreactiontoanything_label" class="field-label">Has your child had a severe allergic reaction to ANYTHING - including food, medication, previous vaccines or anything else?</label><div class="validators"></div></div><div class="control"><span id="msemr_severeallergicreactiontoanything" class="boolean-radio&#32;" onchange="setIsDirty(this.id);"><input id="msemr_severeallergicreactiontoanything_0" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$msemr_severeallergicreactiontoanything" value="0" checked="checked" /><label for="msemr_severeallergicreactiontoanything_0"><span class='sr-only'>Have you had a severe allergic reaction to ANYTHING - including food, medication, previous vaccines or anything else? </span>No</label><input id="msemr_severeallergicreactiontoanything_1" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$msemr_severeallergicreactiontoanything" value="1" /><label for="msemr_severeallergicreactiontoanything_1"><span class='sr-only'>Have you had a severe allergic reaction to ANYTHING - including food, medication, previous vaccines or anything else? </span>Yes</label></span></div></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;boolean-radio-cell"><div class="info"><label id="msemr_severepriorreactiontoavaccine_label" class="field-label">Has your child ever had a serious reaction after receiving a vaccination?</label><div class="validators"></div></div><div class="control"><span id="msemr_severepriorreactiontoavaccine" class="boolean-radio&#32;" onchange="setIsDirty(this.id);"><input id="msemr_severepriorreactiontoavaccine_0" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$msemr_severepriorreactiontoavaccine" value="0" checked="checked" /><label for="msemr_severepriorreactiontoavaccine_0"><span class='sr-only'>Has your child ever had a serious reaction after receiving a vaccination? </span>No</label><input id="msemr_severepriorreactiontoavaccine_1" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$msemr_severepriorreactiontoavaccine" value="1" /><label for="msemr_severepriorreactiontoavaccine_1"><span class='sr-only'>Hs your child ever had a serious reaction after receiving a vaccination? </span>Yes</label></span></div></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;boolean-radio-cell"><div class="info"><label id="msemr_bleedingdisorder_label" class="field-label">Is the child sick today? </label><div class="validators"></div></div><div class="control"><span id="msemr_bleedingdisorder" class="boolean-radio&#32;" onchange="setIsDirty(this.id);"><input id="msemr_bleedingdisorder_0" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$msemr_bleedingdisorder" value="0" checked="checked" /><label for="msemr_bleedingdisorder_0"><span class='sr-only'>Is your child sick today? </span>No</label><input id="msemr_bleedingdisorder_1" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$msemr_bleedingdisorder" value="1" /><label for="msemr_bleedingdisorder_1"><span class='sr-only'>Is your child sick today? </span>Yes</label></span></div></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;boolean-radio-cell"><div class="info"><label id="montco_gullainbarresyndrome_label" class="field-label"> Has child had Chickenpox? </label><div class="validators"></div></div><div class="control"><span id="montco_gullainbarresyndrome" class="boolean-radio&#32;" onchange="setIsDirty(this.id);"><input id="montco_gullainbarresyndrome_0" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$montco_gullainbarresyndrome" value="0" checked="checked" /><label for="montco_gullainbarresyndrome_0"><span class='sr-only'>Has child had Chickenpox? </span>No</label><input id="montco_gullainbarresyndrome_1" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$montco_gullainbarresyndrome" value="1" /><label for="montco_gullainbarresyndrome_1"><span class='sr-only'>Has child had Chickenpox? </span>Yes</label></span></div></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;boolean-radio-cell"><div class="info"><label id="mvm_haveyoueverreceivedtreatmentforcovid19_label" class="field-label"> Parent or Sibling with history of seizures?</label><div class="validators"></div></div><div class="control"><span id="mvm_haveyoueverreceivedtreatmentforcovid19" class="boolean-radio&#32;" onchange="setIsDirty(this.id);"><input id="mvm_haveyoueverreceivedtreatmentforcovid19_0" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$mvm_haveyoueverreceivedtreatmentforcovid19" value="0" checked="checked" /><label for="mvm_haveyoueverreceivedtreatmentforcovid19_0"><span class='sr-only'>Parent or Sibling with history of seizures? </span>No</label><input id="mvm_haveyoueverreceivedtreatmentforcovid19_1" type="radio" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$mvm_haveyoueverreceivedtreatmentforcovid19" value="1" /><label for="mvm_haveyoueverreceivedtreatmentforcovid19_1"><span class='sr-only'>Parent or Sibling with history of seizures? </span>Yes</label></span></div></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			<tr>
+				<td colspan="1" rowspan="1" class="clearfix&#32;cell&#32;picklist-cell"><div class="info&#32;required"><label for="mvm_vaccinationtype" id="mvm_vaccinationtype_label" class="field-label">Vaccination Type</label><div class="validators"><span id="RequiredFieldValidatormvm_vaccinationtype" style="display:none;">*</span></div></div><div class="control"><select name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$EntityFormView$mvm_vaccinationtype" id="mvm_vaccinationtype" class="form-control&#32;picklist&#32;" onchange="setIsDirty(this.id);" required="" aria-invalid="false" title="Please&#32;select&#32;an&#32;item&#32;in&#32;this&#32;list">
+					<option value="" label="&#32;" aria-label="Blank"></option>
+					<option selected="selected" value="100000000">Covid-19 Series Vaccination</option>
+					<option value="100000001">Covid-19 Booster Vaccination</option>
+					<option value="100000002">General Vaccination</option>
+
+				</select></div></td>
+				<td class="cell&#32;zero-cell"></td>
+			</tr>
+			</table></fieldset></div></div></div>
+		</div><div class="actions"><div class="col-sm-6&#32;clearfix">
+			<div role ="group" class="btn-group entity-action-button" ><input type="button" name="ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$NextButton" value="Next" onclick="javascript:if(typeof&#32;webFormClientValidate&#32;===&#32;&#39;function&#39;){if(webFormClientValidate()){if(typeof&#32;Page_ClientValidate&#32;===&#32;&#39;function&#39;){if(Page_ClientValidate(&#39;&#39;)){clearIsDirty();disableButtons();this.value&#32;=&#32;&#39;Next&#39;;}}else{clearIsDirty();disableButtons();this.value&#32;=&#32;&#39;Next&#39;;}}else{return&#32;false;}}else{if(typeof&#32;Page_ClientValidate&#32;===&#32;&#39;function&#39;){if(Page_ClientValidate(&#39;&#39;)){clearIsDirty();disableButtons();this.value&#32;=&#32;&#39;Next&#39;;}}else{clearIsDirty();disableButtons();this.value&#32;=&#32;&#39;Next&#39;;}};WebForm_DoPostBackWithOptions(new&#32;WebForm_PostBackOptions(&quot;ctl00$ContentContainer$WebFormControl_6dc78a9827bdeb118236002248096716$NextButton&quot;,&#32;&quot;&quot;,&#32;true,&#32;&quot;&quot;,&#32;&quot;&quot;,&#32;false,&#32;true))" id="NextButton" class="btn&#32;btn-primary&#32;button&#32;next&#32;submit-btn&#32;welcome-next" nonActionLinkButton="true" /></div>
+		</div></div>
+	</div>
+</div>
+    
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("ValidationSummaryEntityFormView"));
+var Page_Validators =  new Array(document.getElementById("MaximumLengthValidatormsemr_webformsessioncookievalue"), document.getElementById("DateFormatValidatormsemr_firstdosedate"), document.getElementById("RequiredFieldValidatormvm_vaccinationtype"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ValidationSummaryEntityFormView = document.all ? document.all["ValidationSummaryEntityFormView"] : document.getElementById("ValidationSummaryEntityFormView");
+ValidationSummaryEntityFormView.headertext = "<h2 class=\'validation-header\'><span role=\'presentation\' class=\'fa fa-info-circle\'></span> The form could not be submitted for the following reasons:</h2>";
+var MaximumLengthValidatormsemr_webformsessioncookievalue = document.all ? document.all["MaximumLengthValidatormsemr_webformsessioncookievalue"] : document.getElementById("MaximumLengthValidatormsemr_webformsessioncookievalue");
+MaximumLengthValidatormsemr_webformsessioncookievalue.controltovalidate = "msemr_webformsessioncookievalue";
+MaximumLengthValidatormsemr_webformsessioncookievalue.errormessage = "<a href=\'#msemr_webformsessioncookievalue_label\' onclick=\'javascript:scrollToAndFocus(\"msemr_webformsessioncookievalue_label\",\"msemr_webformsessioncookievalue\");return false;\' referenceControlId=msemr_webformsessioncookievalue>Web Form Session Cookie Value exceeds the maximum length of 100 characters. </a>";
+MaximumLengthValidatormsemr_webformsessioncookievalue.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var DateFormatValidatormsemr_firstdosedate = document.all ? document.all["DateFormatValidatormsemr_firstdosedate"] : document.getElementById("DateFormatValidatormsemr_firstdosedate");
+DateFormatValidatormsemr_firstdosedate.controltovalidate = "msemr_firstdosedate";
+DateFormatValidatormsemr_firstdosedate.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var RequiredFieldValidatormvm_vaccinationtype = document.all ? document.all["RequiredFieldValidatormvm_vaccinationtype"] : document.getElementById("RequiredFieldValidatormvm_vaccinationtype");
+RequiredFieldValidatormvm_vaccinationtype.controltovalidate = "mvm_vaccinationtype";
+RequiredFieldValidatormvm_vaccinationtype.errormessage = "<a href=\'#mvm_vaccinationtype_label\' onclick=\'javascript:scrollToAndFocus(\"mvm_vaccinationtype_label\",\"mvm_vaccinationtype\");return false;\' referenceControlId=mvm_vaccinationtype>Vaccination Type is a required field. </a>";
+RequiredFieldValidatormvm_vaccinationtype.display = "Dynamic";
+RequiredFieldValidatormvm_vaccinationtype.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidatormvm_vaccinationtype.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('ValidationSummaryEntityFormView');
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('MaximumLengthValidatormsemr_webformsessioncookievalue').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MaximumLengthValidatormsemr_webformsessioncookievalue'));
+}
+
+document.getElementById('DateFormatValidatormsemr_firstdosedate').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('DateFormatValidatormsemr_firstdosedate'));
+}
+
+document.getElementById('RequiredFieldValidatormvm_vaccinationtype').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('RequiredFieldValidatormvm_vaccinationtype'));
+}
+//]]>
+</script>
+</form>
+
+
+	<script src="/js/pcf/loadPcfControls.js"></script>
+
+	
+		
+
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/postpreform.bundle-f4f91a6eb4.js" type="text/javascript"></script>
+
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/app.bundle-a91ffc8e89.js" type="text/javascript"></script>
+
+	<script src="https://content.powerapps.com/resource/powerappsportal/dist/default-1033.bundle-eda4e638fd.js" type="text/javascript"></script>
+
+	
+	
+	
+	<script>
+		//this event will update the title of the page based on active breadcrumb
+		$('.breadcrumb').ready(function () {
+			if ($('.breadcrumb').is(':visible')) {
+				document.querySelector('title').innerHTML = ($('.breadcrumb > li.active').text() + "&nbsp;· Vaccination registration and booking portal");
+			}
+		});
+
+		function GoToNewEditor() {
+			var editCmsUrlSegment = "EditInCms";
+			var currentUrl = window.location.href;
+			if (currentUrl.indexOf('?') > -1) {
+				var urlSegments = currentUrl.split("?");
+				window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname + '?' + urlSegments[1];
+			}
+			else {
+				window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname;
+			}
+		}
+	</script>
+	
+		
+	
+	
+		
+			<script>
+				if ('serviceWorker' in navigator) {
+					navigator.serviceWorker.getRegistrations().then(function(registrations) {
+					for(let registration of registrations) {
+						registration.unregister();
+					}}).catch(function(err) {
+					console.log('Service Worker unregister action failed: ', err);
+					});
+				}
+			</script>
+		
+	
+		
+</body>
+</html>
+<!-- Generated at 9/12/2022 3:54:53 AM -->
+<!-- Page OK -->

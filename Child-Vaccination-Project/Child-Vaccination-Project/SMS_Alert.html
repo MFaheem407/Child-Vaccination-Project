@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/w3.css">
+  <style>
+   body {
+    margin: 0;
+    padding: 3em 0;
+    color: #fff;
+    background: #64bdf5;
+    font-family: Georgia, Times New Roman, serif;
+   }
+
+   #container {
+    width: 600px;
+    background: #fff;
+    color: #555;
+    border: 3px solid #ccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    border-top: 3px solid #ddd;
+    padding: 1em 2em;
+    margin: 0 auto;
+    -webkit-box-shadow: 3px 7px 5px #000;
+    -moz-box-shadow: 3px 7px 5px #000;
+    -ms-box-shadow: 3px 7px 5px #000;
+    box-shadow: 3px 7px 5px #000;
+   }
+
+   ul {
+    list-style: none;
+    padding: 0;
+   }
+
+   ul > li {
+    padding: 0.12em 1em
+   }
+
+   label {
+    display: block;
+    float: left;
+    width: 130px;
+   }
+
+   input, textarea {
+    font-family: Georgia, Serif;
+   }
+  </style>
+ 
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="topnav" id="myTopnav" style="height: 100px;">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    
+  </label>
+  
+  <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Child.html#" style="margin-left:750px ;">Home</a>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/About.html#" >About</a>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Contact.html#" >Contact</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/health_education.html#">Health Education</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Immunization_dashboard.html#">Immunization Dashboard</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/SMS_Alert.html#">SMS Alert</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Vaccine_Schedule.html#">Vaccine Schedule</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Vaccine_Assessment_Tool.html#">Vaccine Assessment Tool</a>
+    </div>
+  </div>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/feedback.html#" >Feedback</a>
+  <h2 style="margin-top: 5px;margin-right: 500px;color: white;text-size-adjust: 30%;">Child Vaccination System</h2>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+   <div id="container" style="margin-top:20px;">
+    <h1>Sending Alert SMS to Clients</h1>
+    <form action="" method="post">
+     <ul>
+      <li>
+       <label for="phoneNumber">Phone Number</label>
+       <input type="text" name="phoneNumber" id="phoneNumber" placeholder="3855550168" /></li>
+      <li>
+      <label for="carrier">Carrier</label>
+       <input type="text" name="carrier" id="carrier" />
+      </li>
+      <li>
+       <label for="smsMessage">Message</label>
+       <textarea name="smsMessage" id="smsMessage" cols="45" rows="15"></textarea>
+      </li>
+     <li><input type="submit" name="sendMessage" id="sendMessage" value="Send Message" /></li>
+    </ul>
+   </form>
+  </div>
+  <!-- Footer -->
+
+<footer>
+  <div style="background-color:#0082e6;height: 200px;margin-top: 30px;">
+  <a href="#"><i class="fa fa-facebook-official" style="margin-top:70px;margin-left:550px;"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p style="margin-left:525px;margin-top: 30px;">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">iiui.css</a>
+  </p>
+</div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+ </body>
+</html>

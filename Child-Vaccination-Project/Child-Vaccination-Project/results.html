@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/dist/css/w3.css">
+<body>
+
+<!-- Navigation -->
+<div class="topnav" id="myTopnav" style="height: 100px;">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    
+  </label>
+  
+  <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Child.html#" style="margin-left:750px ;">Home</a>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/About.html#" >About</a>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Contact.html#" >Contact</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/health_education.html#">Health Education</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Immunization_dashboard.html#">Immunization Dashboard</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/SMS_Alert.html#">SMS Alert</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Vaccine_Schedule.html#">Vaccine Schedule</a>
+      <a href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/Vaccine_Assessment_Tool.html#">Vaccine Assessment Tool</a>
+    </div>
+  </div>
+  <a  href="file:///D:/Xammp%20installed/htdocs/Child-Vaccination-Project/feedback.html#" >Feedback</a>
+  <h2 style="margin-top: 5px;margin-right: 500px;color: white;text-size-adjust: 30%;">Child Vaccination System</h2>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> 
+</div>
+<br>
+			<div class="row">
+				<div class="col content content-fullwidth">
+					<h1 id="content" class="">Your Vaccine Assessment Results: Recommended Vaccines</h1>
+                    <br> 
+                    <p class='subtitle'><strong>Your answers to the vaccine assessment suggest that your child may need the following vaccines if your child has not had them before or if additional doses are needed.</strong><br/><br>Click on the vaccine name to get more information about who should get each vaccine, as well as a link to a fact sheet with information about the disease prevented by the vaccine and potential side effects of the vaccine.</p>
+                       <br>		
+					<div class="row">
+						<div class="col">
+							<!-- Content Goes Here -->
+												<table border='1'><tr><th id='vacc' bgcolor='e8e6e1'><b>Vaccine</b></th><th id='suggested' bgcolor='e8e6e1'><b>Recommended because...</b></th></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/mmr.html")'>MMR</a></b> (Measles,mumps,rubella)</td><td headers='suggested'>Your child’s age indicates that they need this vaccine. MMR is a 2-dose series, usually given at ages 1 year and 4&ndash;6 years. Children older than 6 years and adolescents should be vaccinated if they have not yet completed the series.<br/><br/></td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/varicella.html")'>Chickenpox</a></b></td><td headers='suggested'>Your child’s age indicates that they need this vaccine. Chickenpox is a 2-dose series, usually given at ages 1 year and 4&ndash;6 years. Children older than 6 years and adolescents should be vaccinated if they have not yet completed the series.<br/><br/></td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/hep-a.html")'>Hepatitis A</a></b></td><td headers='suggested'>Your child’s age indicates that they need this vaccine. <br/>Hepatitis A vaccine is a 2-dose series. The first dose is usually given between 12 months and 23 months of age. The second dose should be given 6 months after the first dose. Children older than 2 years and adolescents should be vaccinated if they have not yet completed the series. </td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/hep-b.html")'>Hepatitis B</a></b></td><td headers='suggested'>Your child's age indicates that they need this vaccine. <br/>Hepatitis B is a 3-dose series, usually given at birth, 1-2 months, and 6-18 months of age. Children older than 18 months and adolescents should be vaccinated if they have not yet completed the series.</td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/flu.html")'>Seasonal Flu (Influenza)</a></b></td><td headers='suggested'>Influenza vaccine is recommended each flu season for everyone 6 months of age and older who do not have contraindications. Some children between the ages of 6 months and 8 years will need 2 doses in one season.</td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/tdap.html")'>Tdap</a></b> (Tetanus, diphtheria, and pertussis) </td><td headers='suggested'>Your child needs 1 booster dose of tetanus, diphtheria, and pertussis vaccine. Later booster doses (due every 10 years) can be either Td or Tdap vaccine.</td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/pcv13.html")'>Pneumococcal</a></b></td><td headers='suggested'>Your child is at risk for pneumococcal disease. There are two types of pneumococcal vaccines: PCV13 and PPSV23. Both PCV13 and PPSV23 are recommended for persons with conditions that compromise the immune system, as well as other selected conditions.<br/> Talk to your child’s doctor about which pneumococcal vaccines your child may need. <br/><br/></td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/mening.html")'>Meningococcal ACWY</a></b></td><td headers='suggested'>Your child’s age indicates that they need this vaccine.<br/>Meningococcal vaccine is usually given at age 11 years and again at age 16 years.<br/><br/></td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/mening-serogroup.html")'>Meningococcal B</a></b></td><td headers='suggested'>Your child’s age indicates that they may receive this vaccine. Talk to your child’s doctor about meningococcal B vaccine and whether it is right for your child. <br/><br/></td></tr><tr><td headers='vacc'><b><a href='javascript:openWin("https://www.cdc.gov/vaccines/hcp/vis/vis-statements/hpv-gardasil-9.html")'>HPV</a></b> (Human papillomavirus)</td><td headers='suggested'>Your child’s age indicates that they need this vaccine to protect against human papillomavirus infections that could lead to genital warts and some types of cancer, including cervical cancer and anal cancer.</td></tr><tr><td headers='vacc'><b>Weakened Immune System or HIV</b></td><td headers='suggested'>Some vaccines are not recommended for persons who have a weakened immune system or HIV. Be sure to talk to your child's doctor about your child's medical condition(s).</td></tr></table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+<br>
+      <!-- Footer -->
+
+<footer>
+    <div style="background-color:#0082e6;height: 200px;">
+    <a href="#"><i class="fa fa-facebook-official" style="margin-top:70px;margin-left:550px;"></i></a>
+    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <p style="margin-left:525px;margin-top: 30px;">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">iiui.css</a>
+    </p>
+  </div>
+  </footer>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+
+</body>
+</html>
+
